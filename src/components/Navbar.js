@@ -1,25 +1,22 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "./assets/logo.svg";
 import { SlMenu } from "react-icons/sl";
 import { TiTimes } from "react-icons/ti";
 
 const Navbar = () => {
   const [navigation, setNavigation] = useState(false);
 
-  console.log(window.innerWidth);
-
   return (
     <div>
       <div className="navbar bg-base-100 mx-5 md:container md:mx-auto md:py-8">
         <div className="flex-1 md:flex-none lg:flex-none xl:flex-none">
           <Link to="/" className="w-32">
-            <img src={Logo} alt="Logo" className="w-full" />
+            <img src="assets/logo.svg" alt="Logo" className="w-full" />
           </Link>
         </div>
 
-        <div className="flex-none md:ms-auto md:me-12 md:w-6/12">
-          {window.innerWidth <= "768px" ? (
+        <div className="flex-none me-12 md:ms-auto md:w-6/12">
+          {window.innerWidth <= 768 ? (
             <button
               className="btn btn-square btn-ghost"
               onClick={() => setNavigation(!navigation)}
@@ -76,7 +73,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      {window.innerWidth <= "768px" && navigation ? (
+      {window.innerWidth <= 768 && navigation ? (
         <ul>
           <div className="divider"></div>
           <li className="ms-6">

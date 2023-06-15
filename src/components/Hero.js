@@ -1,33 +1,16 @@
-import { useEffect, useRef } from "react";
-import video from "./assets/enemy.mp4";
-
 const Hero = () => {
-  const videoEl = useRef(null);
-
-  const attemptPlay = () => {
-    videoEl &&
-      videoEl.current &&
-      videoEl.current.play().catch((error) => {
-        console.error("Error attempting to play", error);
-      });
-  };
-
-  useEffect(() => {
-    attemptPlay();
-  }, []);
-
   return (
-    <div>
-      <video
-        width="100%"
-        muted
-        className="h-44"
-        src={video}
-        alt="video playing"
-        playsInline
-        loop
-        ref={videoEl}
-      />
+    <div className="w-full">
+      <img src="assets/how-we-work-hero.jpg" alt="hero" />
+      <div className="w-full text-center bg-blue-400">
+        <h2 className="uppercase text-white leading-12 text-4xl font-bold pt-8">
+          CELEBRATING 40 YEARS OF PROLOGIS
+        </h2>
+        <p className="text-white py-8 text-2xl w-10/12 lg:w-5/12 mx-auto">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, cum.
+          Lorem ipsum dolor sit amet consectetur.
+        </p>
+      </div>
     </div>
   );
 };
