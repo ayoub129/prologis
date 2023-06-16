@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ src, Title, paragraph, action }) => {
   return (
-    <div className="card w-11/12 mx-auto bg-base-200 shadow rounded">
+    <div className="card  w-11/12 mx-auto bg-base-200 shadow rounded">
       <figure>
         <img src={src} alt={Title} />
       </figure>

@@ -32,7 +32,7 @@ const Blocks = () => {
   return (
     <div className="bg-base-200 w-full mt-20">
       <div className="w-11/12 mx-auto py-16">
-        <h2 className="uppercase font-bold text-2xl tracking-wide text-green-700">
+        <h2 className="uppercase font-bold text-3xl tracking-wide text-green-700">
           THE BUILDING BLOCKS OF YOUR SUCCESS
         </h2>
         <p className="py-7 text-base-400">
@@ -47,7 +47,7 @@ const Blocks = () => {
           {data.map((d) => (
             <div
               key={d.id}
-              className={` bg-${d.image} flex items-center justify-center h-52 font-bold text-white bg-overlay no-overlay`}
+              className={` bg-${d.image} cursor-pointer flex items-center justify-center h-52 font-bold text-white bg-overlay no-overlay`}
             >
               {d.title}
             </div>

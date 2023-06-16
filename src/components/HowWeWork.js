@@ -56,9 +56,8 @@ const HowWeWork = () => {
         className="mySwiper mb-10"
       >
         {data.map((d) => (
-          <SwiperSlide>
+          <SwiperSlide key={d.id}>
             <Card
-              key={d.id}
               Title={d.Title}
               paragraph={d.paragraph}
               src={d.src}

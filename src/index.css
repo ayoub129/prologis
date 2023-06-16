@@ -1,9 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 body {
   overflow-x: hidden !important;
+  font-family: Montserrat, sans-serif;
 }
 
 .leading-12 {
@@ -30,7 +32,6 @@ body {
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(20, 96, 97, 0.65);
   transition: 0.7s all;
-  cursor: pointer;
 }
 
 .no-overlay:hover {
@@ -54,4 +55,21 @@ body {
 .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+.bg-video {
+  background: url(../public/assets/network.jpg) no-repeat;
+  background-size: cover;
+}
+
+.leading-large {
+  line-height: 2.7rem;
+  margin-bottom: 1rem;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
 }
