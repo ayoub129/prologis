@@ -2,29 +2,25 @@ const Blocks = () => {
   const data = [
     {
       id: 1,
-      subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat ipsam nemo non animi molestiae quod, quibusdam et a fugit natus quam perspiciatis! Soluta ea sint nemo quae facere rem!",
+      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       title: "Development & Acquisitions",
       image: "development",
     },
     {
       id: 2,
-      subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat ipsam nemo non animi molestiae quod, quibusdam et a fugit natus quam perspiciatis! Soluta ea sint nemo quae facere rem!",
+      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       title: "The Essentials Platform",
       image: "essentials-platform",
     },
     {
       id: 3,
-      subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat ipsam nemo non animi molestiae quod, quibusdam et a fugit natus quam perspiciatis! Soluta ea sint nemo quae facere rem!",
+      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       title: "Real Estate Operations",
       image: "real-estate",
     },
     {
       id: 4,
-      subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat ipsam nemo non animi molestiae quod, quibusdam et a fugit natus quam perspiciatis! Soluta ea sint nemo quae facere rem!",
+      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       title: "Strategic Capital",
       image: "strategic",
     },
@@ -47,9 +43,12 @@ const Blocks = () => {
           {data.map((d) => (
             <div
               key={d.id}
-              className={` bg-${d.image} cursor-pointer flex items-center justify-center h-52 font-bold text-white bg-overlay no-overlay`}
+              className={` bg-${d.image} span-${d.id} flex text-center cursor-pointer items-center justify-center hover:justify-between h-52 font-bold text-white bg-overlay no-overlay`}
             >
-              {d.title}
+              <p className="ml-10 text-center">{d.title}</p>
+              <p className="w-3/12 opacity-0 text-small font-normal">
+                {d.subtitle}
+              </p>
             </div>
           ))}
         </div>

@@ -62,6 +62,7 @@ const HowWeWork = () => {
               paragraph={d.paragraph}
               src={d.src}
               action={d.action}
+              slid={true}
             />
           </SwiperSlide>
         ))}

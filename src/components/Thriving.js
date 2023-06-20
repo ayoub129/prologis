@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Thriving = () => {
   return (
@@ -19,7 +20,7 @@ const Thriving = () => {
           className="mb-5"
         />
         <Link className="text-green-700" to={"/"}>
-          SEE HOW IT WORKS
+          SEE HOW IT WORKS <AiOutlineArrowRight className="inline-block mb-1" />
         </Link>
       </div>
     </div>

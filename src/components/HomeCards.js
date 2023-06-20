@@ -1,7 +1,14 @@
 import { AiOutlineSearch } from "react-icons/ai";
 import Card from "./Card";
+import { useState } from "react";
 
 const HomeCards = () => {
+  const [text, setText] = useState("");
+
+  const handleChange = (e) => {
+    setText(e.target.value);
+  };
+
   const data = [
     {
       id: 1,
@@ -9,7 +16,7 @@ const HomeCards = () => {
       Title: "Real Estate: A Foundation for Growth",
       paragraph:
         "We own and operate the premier logistics real estate portfolio in the markets that matter.",
-      action: "Buy Now",
+      action: "search for properties",
     },
     {
       id: 2,
@@ -17,7 +24,7 @@ const HomeCards = () => {
       Title: "The Essentials Platform",
       paragraph:
         "If it's essential, we have the solution. The only platform of its kind to deliver end-to-end solutions across all segments of fulfillment.",
-      action: "Buy Now",
+      action: "search for properties",
     },
     {
       id: 3,
@@ -25,12 +32,12 @@ const HomeCards = () => {
       Title: "GROUNDBREAKERS",
       paragraph:
         "Read the latest issue of GROUNDBREAKERS Magazine, and watch our thought leadership event on demand.",
-      action: "Buy Now",
+      action: "search for properties",
     },
   ];
   return (
     <>
-      <div className="mt-20 grid gap-10 grid-cols-1 ">
+      <div className="mt-20 grid gap-10 grid-cols-1 md:grid-cols-3 md:gap-2 ">
         {data.map((d) => (
           <Card
             key={d.id}
@@ -52,11 +59,13 @@ const HomeCards = () => {
                 Search by Location or Postal Code
               </span>
             </label>
-            <div className="flex">
+            <div className="flex md:w-full">
               <input
                 type="text"
+                value={text}
+                onChange={handleChange}
                 placeholder="Type here"
-                className="input input-bordered border-r-0 w-full max-w-xs rounded-r-none"
+                className="input input-bordered border-r-0 w-full max-w-xs md:w-11/12 rounded-r-none"
               />
               <button className="btn btn-square bg-green-700 rounded-l-none">
                 <AiOutlineSearch className="font-semibold text-3xl text-white" />

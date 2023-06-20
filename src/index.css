@@ -28,6 +28,13 @@ body {
   background-image: url(../public/assets/strategic.jpeg);
 }
 
+.bg-house {
+  background-image: url(../public/assets/building/house1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .bg-overlay {
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(20, 96, 97, 0.65);
@@ -62,6 +69,14 @@ body {
   background-size: cover;
 }
 
+.bg-missi {
+  background: url(../public/assets/Large-Mississauga.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  letter-spacing: 0.15em;
+}
+
 .leading-large {
   line-height: 2.7rem;
   margin-bottom: 1rem;
@@ -72,4 +87,81 @@ body {
   color: white;
   font-size: 0.75rem;
   font-weight: bold;
+}
+
+.border-1 {
+  border: 1px solid rgb(12, 105, 12);
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 30px;
+  right: 4rem;
+}
+
+footer .divider:before,
+footer .divider:after {
+  background-color: white !important;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.span-1:hover,
+.span-4:hover,
+.span-2:hover,
+.span-3:hover {
+  transition: 1s all ease;
+  grid-column: 1 / 3;
+}
+
+.span-1:has(+ .span-2:hover),
+.span-3:has(+ .span-4:hover) {
+  display: none;
+}
+
+.span-1:hover + .span-2,
+.span-3:hover + .span-4 {
+  display: none;
+}
+
+.span-1:hover .opacity-0,
+.span-3:hover .opacity-0 {
+  opacity: 1;
+  transition: 1s all ease;
+}
+
+.span-2:hover > p,
+.span-4:hover > p {
+  order: 2;
+}
+
+.span-1:hover > p,
+.span-4:hover > p,
+.span-2:hover > p,
+.span-3:hover > p {
+  width: 45%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.span-2:hover > p + p,
+.span-4:hover > p + p {
+  opacity: 1;
+  order: 1;
+  transition: 1s all ease;
+}
+
+footer .divider {
+  margin-top: 0.3rem !important;
+  margin-bottom: 2.5rem !important;
+}
+
+.bg-white:hover {
+  background-color: white !important;
 }

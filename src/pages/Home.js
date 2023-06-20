@@ -5,18 +5,23 @@ import Blocks from "../components/Blocks";
 import Slider from "../components/HowWeWork";
 import Thriving from "../components/Thriving";
 import Global from "../components/Global";
-import Properties from "../components/Properties";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
     <div>
-      <Hero />
+      <Hero
+        isVideo={true}
+        src="assets/video.mp4"
+        header="CELEBRATING 40 YEARS OF PROLOGIS"
+        text="EXPLORE OUR 40 YEAR HISTORY "
+      />
       <Cards />
       <Blocks />
       <Slider />
       <Thriving />
       <Global />
-      <Properties />
+      <Footer />
     </div>
   );
 };
