@@ -4,12 +4,12 @@ import Work from "../components/Work";
 import CustomerSays from "../components/CustomerSays";
 import WorkWith from "../components/WorkWith";
 
-const HowWeWork = () => {
+const Development = () => {
   return (
     <div>
       <Hero
         src="assets/how-we-work-hero.jpg"
-        header="HOW WE WORK"
+        header="Development"
         text="Our people engage with our customers and partners to grow relationships that drive success and help your business thrive."
       />
       <Work
@@ -24,4 +24,4 @@ const HowWeWork = () => {
   );
 };
 
-export default HowWeWork;
+export default Development;

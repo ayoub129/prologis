@@ -7,3 +7,13 @@ export const SearchProperties = (text, data) => {
 
   return newData;
 };
+
+export const FilterProperty = (type, data) => {
+  const newData = data.filter(
+    (ele) =>
+      String(ele.city.trim().toUpperCase()) ===
+      String(type.trim().toUpperCase())
+  );
+
+  return newData;
+};

@@ -4,6 +4,10 @@ const PrologisReducers = (state, action) => {
       return {
         properties: action.payload,
       };
+    case "FILTER_PROPERTIES":
+      return {
+        properties: action.payload,
+      };
     default:
       return state;
   }

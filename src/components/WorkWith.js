@@ -53,10 +53,10 @@ const WorkWith = () => {
   ];
   return (
     <div className="bg-base-200 text-center py-12">
-      <h3 className="text-green-700 font-bold tracking-wider mb-5">
+      <h3 className="text-green-700 font-bold tracking-wider mb-10">
         WE WORK WITH
       </h3>
-      <div className="grid grid-cols-2 gap-6 w-11/12 mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-11/12 mx-auto">
         {data.map((d) => (
           <WorkWithItem
             key={d.id}

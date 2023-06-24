@@ -5,8 +5,8 @@ const CustomerSays = () => {
         <h3 className="ml-10 text-4xl leading-12 w-6/12 text-center">
           IN OUR CUSTOMERS WORDS
         </h3>
-        <div className="flex shadow top-12-rem left-5 flex-col bg-base-100 p-4 mt-12 w-11/12 mx-auto rounded absolute">
-          <div className="customer-item ">
+        <div className="flex top-12-rem left-5 flex-col lg:flex-row lg:justify-between  p-4 mt-12 w-11/12 md:w-8/12 mx-auto rounded absolute">
+          <div className="customer-item bg-base-100 rounded lg:w-6/12 lg:mr-4 lg:shadow p-4 ">
             <div className="flex items-center">
               <img
                 src="assets/customer1.png"
@@ -23,13 +23,13 @@ const CustomerSays = () => {
                 </h5>
               </div>
             </div>
-            <p className="text-sm text-black mt-4 font-light tracking-wide">
+            <p className="text-xl text-black mt-4 font-light tracking-wide">
               The team at Prologis has worked with Big Bus through these
               challenging times. I could not ask for a better partner than the
               Prologis team – they have been ‘A-plus’ all the way.
             </p>
           </div>
-          <div className="customer-item mt-12">
+          <div className="customer-item bg-base-100 rounded lg:w-6/12 lg:shadow lg:p-4 mt-12 lg:mt-0">
             <div className="flex items-center">
               <img
                 src="assets/customer2.png"
@@ -45,7 +45,7 @@ const CustomerSays = () => {
                 </h5>
               </div>
             </div>
-            <p className="text-sm text-black mt-4 font-light tracking-wide">
+            <p className="text-xl text-black mt-4 font-light tracking-wide">
               Prologis is extremely customer-centric. They make us feel like we
               are the most important customer.
             </p>

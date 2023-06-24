@@ -1,18 +1,32 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import PrologisContext from "../context/PrologisContext";
+import { FilterProperty } from "../context/PrologisActions";
 import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
+import { Propertiesdata } from "./Propertiesdata";
 
 const FilterItems = ({ id, title, items, normal }) => {
+  const { dispatch } = useContext(PrologisContext);
   const [isOpen, setIsOpen] = useState(false);
-  const [isChecked, setIsChecked] = useState(false);
+  const [checkedState, setCheckedState] = useState(new Array(3).fill(false));
 
-  const handleChange = (e) => {
-    setIsChecked(!isChecked);
+  const handleChange = (position) => {
+    const updateCheckedState = checkedState.map((i, index) =>
+      index === position ? !i : i
+    );
+
+    setCheckedState(updateCheckedState);
+    const FilterResult = FilterProperty(items[position], Propertiesdata);
+
+    dispatch({
+      type: "FILTER_PROPERTIES",
+      payload: FilterResult,
+    });
   };
 
   return (
     <div className="w-full bg-white block">
       <div className="flex justify-between mb-3">
-        {title}{" "}
+        {title}
         {isOpen ? (
           <AiOutlineArrowUp
             onClick={() => setIsOpen(false)}
@@ -28,15 +42,15 @@ const FilterItems = ({ id, title, items, normal }) => {
       {isOpen && normal && (
         <ul
           tabIndex={id}
-          className="w-full mt-6 menu p-2 shadow bg-base-100 border-2 ml-0 text-black"
+          className="w-full  mt-6 menu p-2 shadow bg-base-100 border-2 ml-0 text-black"
         >
           <li tabIndex={id}>
-            {items.map((i) => (
-              <div className="form-control">
+            {items.map((i, index) => (
+              <div key={i} className="form-control">
                 <label className="cursor-pointer label">
                   <input
-                    checked={isChecked}
-                    onChange={handleChange}
+                    checked={checkedState[index]}
+                    onChange={() => handleChange(index)}
                     type="checkbox"
                     className="checkbox checkbox-accent me-6"
                   />

@@ -10,8 +10,10 @@ const Properties = () => {
   return (
     <div>
       <HeroProperties />
-      <Search />
-      <Filter />
+      <div className="block lg:flex lg:w-11/12 lg:mx-auto">
+        <Search />
+        <Filter />
+      </div>
       <div className="md:flex justify-between w-11/12 mx-auto mb-20">
         <Houses />
         <Cars />

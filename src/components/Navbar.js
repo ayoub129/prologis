@@ -15,7 +15,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="flex-none me-12 md:me-2 md:ms-auto md:8/12 lg:w-6/12">
+        <div className="flex-none me-12 md:me-2 md:ms-auto md:w-8/12 lg:w-7/12">
           <button
             className="btn  md:hidden btn-square btn-ghost"
             onClick={() => setNavigation(!navigation)}
@@ -26,7 +26,7 @@ const Navbar = () => {
               <SlMenu className="font-semibold text-xl" />
             )}
           </button>
-          <ul className="hidden  md:flex w-full justify-between">
+          <ul className="hidden md:flex w-full justify-between">
             <li className="ms-6">
               <Link
                 className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
@@ -46,17 +46,25 @@ const Navbar = () => {
             <li className="ms-6">
               <Link
                 className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
-                to="/howwework"
+                to="/Development"
               >
-                How We Work
+                Development
               </Link>
             </li>
             <li className="ms-6">
               <Link
                 className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
-                to="/careers"
+                to="/Construction"
               >
-                Careers
+                Construction
+              </Link>
+            </li>
+            <li className="ms-6">
+              <Link
+                className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
+                to="/Cleaning"
+              >
+                Cleaning
               </Link>
             </li>
             <li className="ms-6">
@@ -94,18 +102,27 @@ const Navbar = () => {
           <li className="ms-6">
             <Link
               className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
-              to="/howwework"
+              to="/Development"
             >
-              How We Work
+              Development
             </Link>
           </li>
           <div className="divider"></div>
           <li className="ms-6">
             <Link
               className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
-              to="/careers"
+              to="/Construction"
             >
-              Careers
+              Construction
+            </Link>
+          </li>
+          <div className="divider"></div>
+          <li className="ms-6">
+            <Link
+              className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
+              to="/Cleaning"
+            >
+              Cleaning
             </Link>
           </li>
           <div className="divider"></div>

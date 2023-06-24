@@ -25,7 +25,7 @@ const Filter = () => {
   ];
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="tracking-wider py-3 md:w-11/12 md:mx-auto pl-5 md:pl-0 text-white font-bold">
+    <div className="tracking-wider py-3 md:w-8/12 md:mx-auto pl-5 md:pl-0 text-white font-bold">
       <div className=" block mt-5">
         <label
           tabIndex={0}

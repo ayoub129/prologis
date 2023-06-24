@@ -33,7 +33,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 30rem;
+  margin-bottom: 35rem;
 }
 
 .bg-overlay {
@@ -171,14 +171,27 @@ footer .divider {
   top: 12rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1070px) {
   .absolute-hero {
     right: 0;
     top: 70%;
   }
 
+  .bg-house {
+    margin-bottom: 20rem;
+    height: 15rem;
+  }
+
+  .top-12-rem {
+    top: 7rem !important;
+  }
+
   .lg-absolute {
     position: absolute;
+  }
+
+  .absolute {
+    right: 2rem;
   }
 }
 
@@ -233,4 +246,37 @@ footer .divider {
 
 .swiper-wrapper {
   align-items: center !important;
+}
+
+@media (min-width: 1070px) {
+  .cars {
+    height: 80vh !important;
+  }
+
+  #cars {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .ml-30 {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 778px) and (max-width: 1070px) {
+  .top-12-rem {
+    top: 9rem;
+  }
+}
+
+.address {
+  background-color: #f1f1f1;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.address .bedrijfsinformatie,
+.address .Adres,
+.address .openbaar {
+  margin: 3rem 0;
 }

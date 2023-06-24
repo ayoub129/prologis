@@ -24,12 +24,12 @@ const Search = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="mx-5 w-full md:w-11/12 md:mx-auto relative"
+      className="mx-5 w-full md:w-4/12 md:mr-5 relative"
     >
       <input
         type="text"
-        className="mt-5 py-3 pl-3 w-11/12 md:w-full border-1 outline-0 border-green-700 "
-        placeholder="Search by Location or Postal Code"
+        className="mt-5 py-3 pl-3 w-11/12 md:w-full rounded border-1 outline-0 border-green-700 "
+        placeholder="Search ..."
         onChange={handleChange}
         value={text}
       />
