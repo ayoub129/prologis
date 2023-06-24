@@ -7,7 +7,7 @@ const Filter = () => {
     {
       id: 1,
       title: "Property Type",
-      items: ["All", "Building", "Land To Sale"],
+      items: ["Building", "Land To Sale", "Cars"],
       normal: true,
     },
     {
@@ -25,7 +25,7 @@ const Filter = () => {
   ];
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="tracking-wider py-3 pl-5 text-white font-bold">
+    <div className="tracking-wider py-3 md:w-11/12 md:mx-auto pl-5 md:pl-0 text-white font-bold">
       <div className=" block mt-5">
         <label
           tabIndex={0}
@@ -47,7 +47,7 @@ const Filter = () => {
         {isOpen && (
           <ul
             tabIndex={0}
-            className="w-11/12 mt-6 menu p-2 shadow bg-base-100 border-2 text-black"
+            className="w-11/12 md:w-full mt-6 menu p-2 shadow bg-base-100 border-2 text-black"
           >
             <li>
               {data.map((d) => (

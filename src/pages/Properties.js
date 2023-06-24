@@ -4,6 +4,7 @@ import Search from "../components/Search";
 import Footer from "../components/Footer";
 import Houses from "../components/Houses";
 import Cars from "../components/Cars";
+import Thriving from "../components/Thriving";
 
 const Properties = () => {
   return (
@@ -11,8 +12,15 @@ const Properties = () => {
       <HeroProperties />
       <Search />
       <Filter />
-      <Houses />
-      <Cars />
+      <div className="md:flex justify-between w-11/12 mx-auto mb-20">
+        <Houses />
+        <Cars />
+      </div>
+      <Thriving
+        src="assets/constructers.jpg"
+        Text="Prologis Essentials makes it easier for our customers to do business. you can easily manage your property, find warehouse solution, contact support and more .. all in one convenient online location."
+        Title={"DISCOVER PROLOGIS ESSENTIALS"}
+      />
       <Footer />
     </div>
   );

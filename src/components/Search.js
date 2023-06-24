@@ -1,15 +1,42 @@
 import { AiOutlineSearch } from "react-icons/ai";
+import { useState, useContext } from "react";
+import PrologisContext from "../context/PrologisContext";
+import { SearchProperties } from "../context/PrologisActions";
+import { Propertiesdata } from "./Propertiesdata";
 
 const Search = () => {
+  const { dispatch } = useContext(PrologisContext);
+  const [text, setText] = useState("");
+
+  const handleChange = (e) => {
+    setText(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const searchResult = SearchProperties(text, Propertiesdata);
+    dispatch({
+      type: "SEARCH_PROPERTIES",
+      payload: searchResult,
+    });
+  };
+
   return (
-    <div className="mx-5 w-full relative">
+    <form
+      onSubmit={handleSubmit}
+      className="mx-5 w-full md:w-11/12 md:mx-auto relative"
+    >
       <input
         type="text"
-        className="mt-5 py-3 pl-3 w-11/12 border-1 outline-0 border-green-700 "
+        className="mt-5 py-3 pl-3 w-11/12 md:w-full border-1 outline-0 border-green-700 "
         placeholder="Search by Location or Postal Code"
+        onChange={handleChange}
+        value={text}
       />
-      <AiOutlineSearch className="font-semibold text-3xl text-green-700 cursor-pointer absolute" />
-      <div className="flex mt-5">
+      <button type="submit">
+        <AiOutlineSearch className="font-semibold text-3xl text-green-700 cursor-pointer absolute" />
+      </button>
+      <div className="flex md:hidden mt-5">
         <a href="#houses" className="btn">
           Houses
         </a>
@@ -17,7 +44,7 @@ const Search = () => {
           Cars
         </a>
       </div>
-    </div>
+    </form>
   );
 };
 

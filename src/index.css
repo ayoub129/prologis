@@ -33,6 +33,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 30rem;
 }
 
 .bg-overlay {
@@ -164,4 +165,72 @@ footer .divider {
 
 .bg-white:hover {
   background-color: white !important;
+}
+
+.top-12-rem {
+  top: 12rem;
+}
+
+@media (min-width: 1200px) {
+  .absolute-hero {
+    right: 0;
+    top: 70%;
+  }
+
+  .lg-absolute {
+    position: absolute;
+  }
+}
+
+.text-green-700 {
+  color: #187770 !important;
+}
+
+.bg-green-700 {
+  background-color: #187770 !important;
+}
+
+.bg-green-700:hover {
+  background-color: #187771b4 !important;
+}
+
+.hover\:bg-green-700:hover {
+  color: white !important;
+  background-color: #187770 !important;
+}
+
+.hover\:bg-green-700:hover .text-green-700 {
+  color: white !important;
+}
+
+.active-bg-green-700 {
+  color: white !important;
+  background-color: #187770 !important;
+}
+
+.active-bg-green-700 .text-green-700 {
+  color: white !important;
+}
+
+.bg-gradiant {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 82, 78, 0.85) 0%,
+    rgba(20, 96, 97, 0.85) 26.43%,
+    rgba(3, 97, 119, 0.85) 57.8%,
+    rgba(16, 67, 102, 0.85) 100%
+  ) !important;
+}
+
+.absolute-header {
+  background-image: linear-gradient(
+    260deg,
+    rgba(24, 146, 191, 0.9) -52%,
+    rgba(29, 149, 141, 0.9) 54%
+  );
+  color: white;
+}
+
+.swiper-wrapper {
+  align-items: center !important;
 }

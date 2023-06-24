@@ -3,52 +3,55 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="mt-28">
-      <div className="bg-overlay text-center">
+      <div className="bg-gradiant text-center">
         <h3 className="pt-12 text-white text-3xl font-bold">
           LET'S GET STARTED
         </h3>
-        <p className="mt-5 text-white font-bold w-10/12 mx-auto">
+        <p className="mt-5 md:text-2xl text-white md:font-light md:tracking-wider md:text-base-400 w-10/12 mx-auto">
           Every connection starts with a conversation. Our team is here to help.
         </p>
-        <ul className="mt-10">
-          <li>
+        <ul className="mt-10 md:flex md:items-center md:justify-between pb-24 md:w-10/12 md:mx-auto">
+          <li className="mb-16 md:mb-0">
             <Link
-              className="text-white hover:font-semibold transition duration-500"
+              className="text-white border-b-2 border-white transition duration-500 hover:border-2 p-2 transition"
               to={"/"}
             >
               CONTACT US
             </Link>
           </li>
-          <div className="divider w-6/12 mx-auto"></div>
-          <li>
+          <li className="mb-16 md:mb-0">
             <Link
-              className="text-white hover:font-semibold transition duration-500"
+              className="text-white border-b-2 border-white transition duration-500 hover:border-2 p-2 transition"
               to={"/"}
             >
               OFFICE LOCATIONS
             </Link>
           </li>
-          <div className="divider w-6/12 mx-auto"></div>
-          <li>
+          <li className="mb-8 md:mb-0">
             <Link
-              className=" text-white hover:font-semibold transition duration-500"
+              className=" text-white border-b-2 border-white transition duration-500 hover:border-2 p-2 transition"
               to={"/"}
             >
               CUSTOMER LOGIN
             </Link>
           </li>
-          <div className="divider w-6/12 mx-auto pb-20"></div>
         </ul>
       </div>
-      <div className="footer-foot">
-        <div className="w-40 mx-auto my-7">
-          <img src="assets/logo.svg" className="w-full" alt="" />
+      <div className="footer-foot md:w-11/12 md:mx-auto md:mt-16 md:flex md:justify-between">
+        <div className="w-40 md:w-4/12 mx-auto md:mx-0 my-7">
+          <Link to={"/"}>
+            <img
+              src="assets/logo.svg"
+              className="w-full md:w-7/12"
+              alt="Logo"
+            />
+          </Link>
         </div>
-        <ul className="text-center">
+        <ul className="text-center md:w-4/12 md:text-left">
           <li className="mt-5">
             <Link
               to={"/properties"}
-              className="hover:font-semibold transition duration-500"
+              className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
             >
               Properties
             </Link>
@@ -56,7 +59,7 @@ const Footer = () => {
           <li className="mt-5">
             <Link
               to={"/howwework"}
-              className="hover:font-semibold transition duration-500"
+              className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
             >
               How We Work
             </Link>
@@ -64,15 +67,17 @@ const Footer = () => {
           <li className="mt-5">
             <Link
               to={"/"}
-              className="hover:font-semibold transition duration-500"
+              className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
             >
               What We Do
             </Link>
           </li>
+        </ul>
+        <ul className="text-center md:w-4/12 md:text-left">
           <li className="mt-5">
             <Link
               to={"/"}
-              className="hover:font-semibold transition duration-500"
+              className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
             >
               Who We Are
             </Link>
@@ -80,7 +85,7 @@ const Footer = () => {
           <li className="mt-5">
             <Link
               to={"/"}
-              className="hover:font-semibold transition duration-500"
+              className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
             >
               Sustainability
             </Link>
@@ -88,16 +93,16 @@ const Footer = () => {
           <li className="mt-5">
             <Link
               to={"/"}
-              className="hover:font-semibold transition duration-500"
+              className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
             >
               News & Research
             </Link>
           </li>
         </ul>
-        <p className="mt-20 mb-5 text-center">
-          &copy; {new Date().getFullYear()} Prologis . All rights reserved.
-        </p>
       </div>
+      <p className="mt-20 mb-5 text-center">
+        &copy; {new Date().getFullYear()} Prologis . All rights reserved.
+      </p>
     </footer>
   );
 };

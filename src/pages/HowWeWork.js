@@ -2,6 +2,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Work from "../components/Work";
 import CustomerSays from "../components/CustomerSays";
+import WorkWith from "../components/WorkWith";
 
 const HowWeWork = () => {
   return (
@@ -17,6 +18,7 @@ const HowWeWork = () => {
         src="assets/work.jpg"
       />
       <CustomerSays />
+      <WorkWith />
       <Footer />
     </div>
   );

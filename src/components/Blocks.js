@@ -27,18 +27,20 @@ const Blocks = () => {
   ];
   return (
     <div className="bg-base-200 w-full mt-20">
-      <div className="w-11/12 mx-auto py-16">
-        <h2 className="uppercase font-bold text-3xl tracking-wide text-green-700">
-          THE BUILDING BLOCKS OF YOUR SUCCESS
-        </h2>
-        <p className="py-7 text-base-400">
-          At Prologis we do things differently. We take the time to listen to
-          you and understand your needs because we know that success means
-          paying attention to the things that really matter.
-        </p>
-        <p className="text-base-400">
-          See how we can help you stay ahead of what's next.
-        </p>
+      <div className="w-11/12 md:flex md:flex-col lg:flex-row md:items-center md:w-9/12 lg:7/12 mx-auto py-16">
+        <div className="md:w-10/12 md:mr-10">
+          <h2 className="uppercase font-bold text-3xl tracking-wide text-green-700">
+            THE BUILDING BLOCKS OF YOUR SUCCESS
+          </h2>
+          <p className="py-7 text-xl font-light tracking-wider text-base-400">
+            At Prologis we do things differently. We take the time to listen to
+            you and understand your needs because we know that success means
+            paying attention to the things that really matter.
+          </p>
+          <p className="text-xl font-light tracking-wider text-base-400">
+            See how we can help you stay ahead of what's next.
+          </p>
+        </div>
         <div className="grid gap-4 mt-7 grid-cols-2">
           {data.map((d) => (
             <div

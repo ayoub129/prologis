@@ -1,27 +1,31 @@
 import { Link } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
-const Thriving = () => {
+const Thriving = ({ Title, Text, src, link }) => {
   return (
     <div className="bg-base-200 py-16 mb-16">
-      <div className="mx-auto w-11/12">
-        <h2 className="text-3xl font-bold text-green-700  tracking-wide">
-          START THRIVING
-        </h2>
-        <p className="py-7 text-base-400">
-          Your business matters to us. Whether you’re a start-up venture or a
-          multinational company, we’ll give you access to the buildings, people
-          and solutions your business needs to thrive and succeed year after
-          year.
-        </p>
-        <img
-          src="assets/Customer-Service.jpg"
-          alt="customer service"
-          className="mb-5"
-        />
-        <Link className="text-green-700" to={"/"}>
-          SEE HOW IT WORKS <AiOutlineArrowRight className="inline-block mb-1" />
-        </Link>
+      <div className="mx-auto w-11/12 md:w-9/12 lg:7/12 md:flex md:items-center">
+        <div className="md:w-6/12">
+          <h2 className="text-3xl font-bold text-green-700  tracking-wide">
+            {Title}
+          </h2>
+          <p className="py-7 text-xl font-light tracking-wider text-base-400 mr-5">
+            {Text}
+          </p>
+          {link && (
+            <Link className="text-green-700 hidden md:block" to={link}>
+              SEE HOW IT WORKS
+              <AiOutlineArrowRight className="inline-block mb-1" />
+            </Link>
+          )}
+        </div>
+        <img src={src} alt="customer service" className="mb-5 md:w-6/12" />
+        {link && (
+          <Link className="text-green-700 md:hidden" to={link}>
+            SEE HOW IT WORKS
+            <AiOutlineArrowRight className="inline-block mb-1" />
+          </Link>
+        )}
       </div>
     </div>
   );

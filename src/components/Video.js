@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 
 const Video = ({ src }) => {
   const videoEl = useRef(null);
@@ -16,7 +16,14 @@ const Video = ({ src }) => {
   }, []);
 
   return (
-    <video loop autoPlay className="w-full" muted playsInline ref={videoEl}>
+    <video
+      loop
+      autoPlay
+      className="w-full lg:h-70 "
+      muted
+      playsInline
+      ref={videoEl}
+    >
       <source src={src}></source>
     </video>
   );

@@ -46,23 +46,27 @@ const Global = () => {
         <h2 className="text-4xl font-bold w-11/12 leading-large">
           GLOBAL SCALE WITH LOCAL IMPACT
         </h2>
-        <p className="leading-7">
+        <p className="md:leading-10 leading-7 md:text-xl text-white md:font-light md:tracking-wider md:text-base-400 md:w-8/12">
           SEE HOW OUR PARTNERSHIPS HELP MAKE A REAL DIFFERENCE BOTH IN OUR LOCAL
           COMMUNITIES AND AROUND THE WORLD.
         </p>
         <Swiper
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={1}
+          slidesPerView={window.innerWidth <= 768 ? 1 : 2}
           navigation={true}
           modules={[Navigation]}
-          className="mySwiper mb-10"
+          className="mySwiper mb-10 "
         >
           {data.map((d) => (
             <SwiperSlide key={d.id}>
-              <div className="ml-12 mr-10 mt-12">
-                <h3 className="font-bold text-3xl">{d.Number}</h3>
-                <p className="text-base-400 text-xl">{d.description}</p>
+              <div className="ml-12 mr-10 md:mx-0 mt-12 md:mt-4 ">
+                <h3 className="font-bold text-3xl md:mb-3 md:w-6/12 md:text-center">
+                  {d.Number}
+                </h3>
+                <p className="text-base-400 text-xl md:text-sm md:w-6/12 md:text-center">
+                  {d.description}
+                </p>
               </div>
             </SwiperSlide>
           ))}

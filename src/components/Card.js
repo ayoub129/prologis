@@ -4,16 +4,16 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Card = ({ src, Title, paragraph, action, slid }) => {
   return (
-    <div className="card  w-11/12 mx-auto bg-base-200 shadow rounded">
+    <div className="card  w-11/12  mx-auto bg-base-200 shadow rounded">
       <figure>
         <img src={src} alt={Title} />
       </figure>
       <div className="card-body">
         <h2
           className={`card-title ${
-            !slid && "font-normal"
+            !slid ? "font-normal" : ""
           } tracking-wider text-2xl md:text-xl md:font-semibold text-green-700 ${
-            slid && "font-bold"
+            slid ? "font-bold" : ""
           }`}
         >
           {Title}

@@ -3,6 +3,11 @@ import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
 
 const FilterItems = ({ id, title, items, normal }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleChange = (e) => {
+    setIsChecked(!isChecked);
+  };
 
   return (
     <div className="w-full bg-white block">
@@ -30,8 +35,9 @@ const FilterItems = ({ id, title, items, normal }) => {
               <div className="form-control">
                 <label className="cursor-pointer label">
                   <input
+                    checked={isChecked}
+                    onChange={handleChange}
                     type="checkbox"
-                    checked
                     className="checkbox checkbox-accent me-6"
                   />
                   <span className="label-text">{i}</span>

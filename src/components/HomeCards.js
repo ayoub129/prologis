@@ -1,12 +1,28 @@
 import { AiOutlineSearch } from "react-icons/ai";
+import { useState, useContext } from "react";
+import PrologisContext from "../context/PrologisContext";
+import { SearchProperties } from "../context/PrologisActions";
+import { Propertiesdata } from "./Propertiesdata";
 import Card from "./Card";
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const HomeCards = () => {
+  const navigate = useNavigate();
+  const { dispatch } = useContext(PrologisContext);
   const [text, setText] = useState("");
 
   const handleChange = (e) => {
     setText(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const properties = SearchProperties(text, Propertiesdata);
+    dispatch({
+      type: "SEARCH_PROPERTIES",
+      payload: properties,
+    });
+    navigate("/properties");
   };
 
   const data = [
@@ -37,7 +53,7 @@ const HomeCards = () => {
   ];
   return (
     <>
-      <div className="mt-20 grid gap-10 grid-cols-1 md:grid-cols-3 md:gap-2 ">
+      <div className="md:w-11/12 lg:w-8/12 mx-auto mt-40 grid gap-10 grid-cols-1 md:grid-cols-3 md:gap-2 ">
         {data.map((d) => (
           <Card
             key={d.id}
@@ -48,7 +64,7 @@ const HomeCards = () => {
           />
         ))}
       </div>
-      <div className="rounded bg-base-200 mx-auto w-11/12 card mt-20">
+      <div className="rounded bg-base-200 mx-auto w-11/12 card mt-20 md:w-9/12 lg:7/12 mx-auto">
         <div className="card-body">
           <h2 className="card-title text-green-700">
             AVAILABLE PROPERTY SEARCH
@@ -59,18 +75,21 @@ const HomeCards = () => {
                 Search by Location or Postal Code
               </span>
             </label>
-            <div className="flex md:w-full">
+            <form onSubmit={handleSubmit} className="flex mt-4 md:w-full">
               <input
                 type="text"
                 value={text}
                 onChange={handleChange}
                 placeholder="Type here"
-                className="input input-bordered border-r-0 w-full max-w-xs md:w-11/12 rounded-r-none"
+                className="input input-bordered border-r-0 w-full  md:w-11/12 rounded-r-none "
               />
-              <button className="btn btn-square bg-green-700 rounded-l-none">
+              <button
+                className="btn btn-square bg-green-700 rounded-l-none"
+                type="submit"
+              >
                 <AiOutlineSearch className="font-semibold text-3xl text-white" />
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
