@@ -250,7 +250,7 @@ footer .divider {
 
 @media (min-width: 1070px) {
   .cars {
-    height: 80vh !important;
+    max-height: 80vh !important;
   }
 
   #cars {
@@ -279,4 +279,13 @@ footer .divider {
 .address .Adres,
 .address .openbaar {
   margin: 3rem 0;
+}
+
+.bg-base-100,
+body {
+  background-color: white !important;
+}
+
+.bg-base-200 {
+  background-color: hsl(0, 0%, 95%) !important;
 }

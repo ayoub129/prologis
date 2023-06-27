@@ -7,7 +7,7 @@ const Filter = () => {
     {
       id: 1,
       title: "Property Type",
-      items: ["Building", "Land To Sale", "Cars"],
+      items: ["All", "Building", "Land To Sale", "Cars"],
       normal: true,
     },
     {
@@ -20,7 +20,7 @@ const Filter = () => {
       id: 3,
       title: "Price",
       items: ["min", "max"],
-      normal: false,
+      normal: "price",
     },
   ];
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +47,7 @@ const Filter = () => {
         {isOpen && (
           <ul
             tabIndex={0}
-            className="w-11/12 md:w-full mt-6 menu p-2 shadow bg-base-100 border-2 text-black"
+            className="w-11/12 md:w-8/12 mt-6 menu p-2 shadow bg-base-100 border-2 text-black"
           >
             <li>
               {data.map((d) => (

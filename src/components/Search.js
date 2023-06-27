@@ -29,7 +29,7 @@ const Search = () => {
       <input
         type="text"
         className="mt-5 py-3 pl-3 w-11/12 md:w-full rounded border-1 outline-0 border-green-700 "
-        placeholder="Search ..."
+        placeholder="Search by City"
         onChange={handleChange}
         value={text}
       />

@@ -7,6 +7,7 @@ const PrologisContext = createContext();
 export const PrologisProvider = ({ children }) => {
   const initialState = {
     properties: Propertiesdata,
+    filterproperties: "All",
   };
 
   const [state, dispatch] = useReducer(PrologisReducers, initialState);
