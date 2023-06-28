@@ -207,7 +207,7 @@ const FilterItems = ({ id, title, items, normal }) => {
           className="w-11/12 flex items-center mt-6 shadow bg-base-100 border-2"
         >
           {!items && (
-            <div className="form-control w-8/12 p-4">
+            <div className="form-control w-8/12 p-4 pr-0">
               <label htmlFor="brand name" className="pb-2">
                 Brand Name
               </label>
