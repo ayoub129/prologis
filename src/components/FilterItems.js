@@ -203,7 +203,7 @@ const FilterItems = ({ id, title, items, normal }) => {
           className="w-11/12 flex items-center mt-6 shadow bg-base-100 border-2"
         >
           {!items && (
-            <div className="form-control w-4/12 p-4">
+            <div className="form-control w-8/12 p-4">
               <label htmlFor="brand name" className="pb-2">
                 Brand Name
               </label>
@@ -215,7 +215,7 @@ const FilterItems = ({ id, title, items, normal }) => {
                 onChange={handlBrandChange}
                 value={brand}
                 placeholder="brand name"
-                className="p-2 rounded shadow border-1 outline-0 border-green-700 me-6 w-full lg:w-40"
+                className="p-2 rounded shadow border-1 outline-0 border-green-700 me-6 w-full "
               />
             </div>
           )}
