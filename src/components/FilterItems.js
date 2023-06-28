@@ -96,7 +96,6 @@ const FilterItems = ({ id, title, items, normal }) => {
     const carsData = Propertiesdata.filter((d) => d.type === "Cars");
 
     const FilterResult = FilterBrand(brand, carsData);
-    console.log(FilterResult);
     dispatch({
       type: "FILTER_BRAND",
       payload: FilterResult,
