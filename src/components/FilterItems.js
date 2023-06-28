@@ -93,7 +93,7 @@ const FilterItems = ({ id, title, items, normal }) => {
   const handlBrandSubmit = (e) => {
     e.preventDefault();
 
-    const carsData = Propertiesdata.map((d) => d.type === "Cars");
+    const carsData = Propertiesdata.filter((d) => d.type === "Cars");
 
     console.log(carsData);
 
