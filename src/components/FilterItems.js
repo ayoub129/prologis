@@ -205,7 +205,7 @@ const FilterItems = ({ id, title, items, normal }) => {
           {!items && (
             <div className="form-control w-4/12 p-4">
               <label htmlFor="brand name" className="pb-2">
-                {i}
+                Brand Name
               </label>
               <input
                 type="text"
