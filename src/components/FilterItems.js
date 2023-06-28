@@ -219,7 +219,7 @@ const FilterItems = ({ id, title, items, normal }) => {
                 onChange={handlBrandChange}
                 value={brand}
                 placeholder="brand name"
-                className="p-2 rounded rounded-r-none shadow border-1 outline-0 border-green-700 w-full "
+                className="input input-bordered border-r-0 w-full md:w-11/12 rounded-r-none outline-0 border-green-700 "
               />
             </div>
           )}
