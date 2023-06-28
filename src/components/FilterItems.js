@@ -224,10 +224,10 @@ const FilterItems = ({ id, title, items, normal }) => {
             </div>
           )}
           <button
-            className="btn btn-square bg-green-700 rounded-l-none"
+            className="btn btn-square bg-green-700 mt-5 rounded-l-none"
             type="submit"
           >
-            <AiOutlineSearch className="font-semibold text-3xl text-white" />
+            <AiOutlineSearch className="font-semibold text-2xl text-white" />
           </button>
         </form>
       )}
