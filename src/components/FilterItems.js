@@ -219,7 +219,7 @@ const FilterItems = ({ id, title, items, normal }) => {
                 onChange={handlBrandChange}
                 value={brand}
                 placeholder="brand name"
-                className="p-2 rounded shadow border-1 outline-0 border-green-700 me-6 w-full "
+                className="p-2 rounded rounded-r-none shadow border-1 outline-0 border-green-700 w-full "
               />
             </div>
           )}
@@ -227,7 +227,7 @@ const FilterItems = ({ id, title, items, normal }) => {
             className="btn btn-square bg-green-700 mt-5 rounded-l-none"
             type="submit"
           >
-            <AiOutlineSearch className="font-semibold text-2xl text-white" />
+            <AiOutlineSearch className="font-semibold text-xl text-white" />
           </button>
         </form>
       )}
