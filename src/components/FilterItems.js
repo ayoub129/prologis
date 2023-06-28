@@ -95,6 +95,8 @@ const FilterItems = ({ id, title, items, normal }) => {
 
     const carsData = Propertiesdata.map((d) => d.type === "cars");
 
+    console.log(carsData);
+
     const FilterResult = FilterBrand(brand, carsData);
     dispatch({
       type: "FILTER_BRAND",
