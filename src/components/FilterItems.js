@@ -4,6 +4,7 @@ import {
   FilterProperty,
   FilterPrice,
   FilterSize,
+  FilterBrand,
 } from "../context/PrologisActions";
 import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
 import { Propertiesdata } from "./Propertiesdata";
@@ -15,6 +16,7 @@ const FilterItems = ({ id, title, items, normal }) => {
   const [size, setSize] = useState({ min: 1, max: "" });
   const [price, setPrice] = useState({ min: 1, max: "" });
   const [Error, setError] = useState("");
+  const [brand, setBrand] = useState("");
 
   const handleChecked = (item, position) => {
     const updateCheckedState = checkedState.map((i, index) =>
@@ -82,6 +84,22 @@ const FilterItems = ({ id, title, items, normal }) => {
     } else {
       setPrice({ min: price.min, max: +e.target.value });
     }
+  };
+
+  const handlBrandChange = (e) => {
+    setBrand(e.target.value);
+  };
+
+  const handlBrandSubmit = (e) => {
+    e.preventDefault();
+
+    const carsData = Propertiesdata.map((d) => d.type === "cars");
+
+    const FilterResult = FilterBrand(brand, carsData);
+    dispatch({
+      type: "FILTER_BRAND",
+      payload: FilterResult,
+    });
   };
 
   return (
@@ -177,6 +195,34 @@ const FilterItems = ({ id, title, items, normal }) => {
           </form>
           <div className="block p-4 text-red-600">{Error ? Error : ""}</div>
         </div>
+      )}
+
+      {isOpen && (
+        <form
+          onSubmit={handlBrandSubmit}
+          className="w-11/12 flex items-center mt-6 shadow bg-base-100 border-2"
+        >
+          {!items && (
+            <div className="form-control w-4/12 p-4">
+              <label htmlFor="brand name" className="pb-2">
+                {i}
+              </label>
+              <input
+                type="text"
+                id="brand name"
+                min={1}
+                required
+                onChange={handlBrandChange}
+                value={brand}
+                placeholder="brand name"
+                className="p-2 rounded shadow border-1 outline-0 border-green-700 me-6 w-full lg:w-40"
+              />
+            </div>
+          )}
+          <button type="submit" className="btn mt-5">
+            Search
+          </button>
+        </form>
       )}
     </div>
   );

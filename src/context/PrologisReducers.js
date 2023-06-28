@@ -20,6 +20,11 @@ const PrologisReducers = (state, action) => {
         filterproperties: "Building",
         properties: action.payload,
       };
+    case "FILTER_BRAND":
+      return {
+        filterproperties: "cars",
+        properties: action.payload,
+      };
     default:
       return state;
   }

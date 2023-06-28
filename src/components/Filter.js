@@ -22,6 +22,10 @@ const Filter = () => {
       items: ["min", "max"],
       normal: "price",
     },
+    {
+      id: 4,
+      title: "Car Brand",
+    },
   ];
   const [isOpen, setIsOpen] = useState(false);
   return (

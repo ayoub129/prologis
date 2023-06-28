@@ -40,3 +40,9 @@ export const FilterSize = (size, data) => {
 
   return newData;
 };
+
+export const FilterBrand = (brand, data) => {
+  const newData = data.filter((d) => d.brand === brand);
+
+  return newData;
+};
