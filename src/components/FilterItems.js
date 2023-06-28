@@ -219,12 +219,12 @@ const FilterItems = ({ id, title, items, normal }) => {
                 onChange={handlBrandChange}
                 value={brand}
                 placeholder="brand name"
-                className="input input-bordered border-r-0 w-full md:w-11/12 rounded-r-none outline-0 border-green-700 "
+                className="input border-r-0 w-full rounded-r-none outline-0 border-green-700 "
               />
             </div>
           )}
           <button
-            className="btn btn-square bg-green-700 mt-5 rounded-l-none"
+            className="btn btn-square bg-green-700 mt-7 rounded-l-none"
             type="submit"
           >
             <AiOutlineSearch className="font-semibold text-xl text-white" />
