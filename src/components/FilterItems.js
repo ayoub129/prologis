@@ -200,10 +200,10 @@ const FilterItems = ({ id, title, items, normal }) => {
       {isOpen && normal === "brand" && (
         <form
           onSubmit={handlBrandSubmit}
-          className="w-11/12 flex flex-col md:flex-row  items-center mt-6 shadow bg-base-100 border-2"
+          className="w-11/12 flex items-center mt-6 shadow bg-base-100 border-2"
         >
           {!items && (
-            <div className="form-control w-11/12 p-4">
+            <div className="form-control w-8/12 p-4">
               <label htmlFor="brand name" className="pb-2">
                 Brand Name
               </label>
@@ -219,8 +219,11 @@ const FilterItems = ({ id, title, items, normal }) => {
               />
             </div>
           )}
-          <button type="submit" className="btn mt-5">
-            Search
+          <button
+            className="btn btn-square bg-green-700 rounded-l-none"
+            type="submit"
+          >
+            <AiOutlineSearch className="font-semibold text-3xl text-white" />
           </button>
         </form>
       )}
