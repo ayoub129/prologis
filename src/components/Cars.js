@@ -8,7 +8,11 @@ const Cars = ({ grid }) => {
   return (
     <div
       id="cars"
-      className={`mt-10 ${grid ? "md:w-11/12 mx-auto" : "md:w-5/12"} `}
+      className={`mt-10 ${
+        grid
+          ? "md:w-full gird-cols-1 md:grid-cols-2 lg:grid-cols-3"
+          : "md:w-11/12 grid-cols-1 cars"
+      } `}
     >
       {!grid && (
         <div className="mt-5 w-11/12 ml-4 lg:ml-0 mx-auto btn">Cars</div>
