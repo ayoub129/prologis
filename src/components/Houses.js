@@ -7,7 +7,7 @@ const Houses = ({ grid }) => {
 
   return (
     <div
-      id="cars"
+      id="houses"
       className={`mt-10 ${grid ? "md:w-11/12 mx-auto" : "md:w-6/12"} `}
     >
       {!grid && (

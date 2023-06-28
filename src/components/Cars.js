@@ -11,7 +11,7 @@ const Cars = ({ grid }) => {
       className={`mt-10 ${
         grid
           ? "md:w-full gird-cols-1 md:grid-cols-2 lg:grid-cols-3"
-          : "md:w-11/12 grid-cols-1 cars"
+          : "md:w-5/12 grid-cols-1 cars"
       } `}
     >
       {!grid && (
