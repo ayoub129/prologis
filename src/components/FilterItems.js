@@ -6,7 +6,11 @@ import {
   FilterSize,
   FilterBrand,
 } from "../context/PrologisActions";
-import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
+import {
+  AiOutlineArrowDown,
+  AiOutlineArrowUp,
+  AiOutlineSearch,
+} from "react-icons/ai";
 import { Propertiesdata } from "./Propertiesdata";
 
 const FilterItems = ({ id, title, items, normal }) => {
