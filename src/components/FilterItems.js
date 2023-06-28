@@ -197,7 +197,7 @@ const FilterItems = ({ id, title, items, normal }) => {
         </div>
       )}
 
-      {isOpen && (
+      {isOpen && normal === "brand" && (
         <form
           onSubmit={handlBrandSubmit}
           className="w-11/12 flex items-center mt-6 shadow bg-base-100 border-2"

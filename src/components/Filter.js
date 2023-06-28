@@ -25,6 +25,7 @@ const Filter = () => {
     {
       id: 4,
       title: "Car Brand",
+      normal: "brand",
     },
   ];
   const [isOpen, setIsOpen] = useState(false);
