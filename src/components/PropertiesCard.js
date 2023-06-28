@@ -14,21 +14,21 @@ const PropertiesCard = ({
   return (
     <div
       className={` ${
-        grid && "h-52"
+        grid && "lg:h-52"
       } card lg:card-side lg:rounded-t-none mt-10 w-11/12 mx-auto bg-base-200 shadow rounded`}
     >
-      <figure className=" lg:w-6/12">
+      <figure className="w-full lg:h-full lg:w-6/12">
         <img src={src} alt={title} className="h-full w-full" />
       </figure>
-      <div className="card-body p-4 gap-0 w-6/12">
+      <div className="card-body p-4 gap-0 w-full lg:w-6/12">
         <h2
           className={`card-title tracking-wider text-xl lg:text-base md:font-semibold text-green-700 font-semibold`}
         >
           {title}
         </h2>
-        <p className="w-11/12 mt-1 text-sm">{address}</p>
+        <p className="w-11/12 mt-1 md:text-sm">{address}</p>
         <p className="font-bold w-11/12 mt-3">{type}</p>
-        <p className="w-11/12 mt-1 text-sm">{description}</p>
+        <p className="w-11/12 mt-1 md:text-sm">{description}</p>
         <p className="text-sm">{brand ? brand : city}</p>
 
         <div className="card-actions mt-3">

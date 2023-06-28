@@ -8,6 +8,17 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+.bg-base-100,
+input,
+body {
+  background-color: white !important;
+}
+
+.bg-base-200,
+.btn {
+  background-color: hsl(0, 0%, 95%) !important;
+}
+
 .leading-12 {
   line-height: 3rem;
 }
@@ -279,13 +290,4 @@ footer .divider {
 .address .Adres,
 .address .openbaar {
   margin: 3rem 0;
-}
-
-.bg-base-100,
-body {
-  background-color: white !important;
-}
-
-.bg-base-200 {
-  background-color: hsl(0, 0%, 95%) !important;
 }

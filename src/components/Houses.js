@@ -20,7 +20,9 @@ const Houses = ({ grid }) => {
       ) : (
         <div
           className={`grid ${
-            grid ? "md:w-full grid-cols-3" : "md:w-11/12 grid-cols-1 cars"
+            grid
+              ? "md:w-full gird-cols-1 md:grid-cols-2 lg:grid-cols-3"
+              : "md:w-11/12 grid-cols-1 cars"
           } `}
         >
           {properties

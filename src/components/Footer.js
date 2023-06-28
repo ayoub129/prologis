@@ -14,7 +14,7 @@ const Footer = () => {
           <li className="mb-16 md:mb-0">
             <Link
               className="text-white border-b-2 border-white transition duration-500 hover:border-2 p-2 transition"
-              to={"/"}
+              to={"/contact"}
             >
               CONTACT US
             </Link>
@@ -22,17 +22,17 @@ const Footer = () => {
           <li className="mb-16 md:mb-0">
             <Link
               className="text-white border-b-2 border-white transition duration-500 hover:border-2 p-2 transition"
-              to={"/"}
+              to={"/properties"}
             >
-              OFFICE LOCATIONS
+              Properties
             </Link>
           </li>
           <li className="mb-8 md:mb-0">
             <Link
               className=" text-white border-b-2 border-white transition duration-500 hover:border-2 p-2 transition"
-              to={"/"}
+              to={"/Construction"}
             >
-              CUSTOMER LOGIN
+              Construction
             </Link>
           </li>
         </ul>
@@ -58,44 +58,36 @@ const Footer = () => {
           </li>
           <li className="mt-5">
             <Link
-              to={"/howwework"}
+              to={"/Development"}
               className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
             >
-              How We Work
+              Development
             </Link>
           </li>
           <li className="mt-5">
             <Link
-              to={"/"}
+              to={"/Construction"}
               className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
             >
-              What We Do
+              Construction
             </Link>
           </li>
         </ul>
         <ul className="text-center md:w-4/12 md:text-left">
           <li className="mt-5">
             <Link
-              to={"/"}
+              to={"/Cleaning"}
               className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
             >
-              Who We Are
+              Cleaning
             </Link>
           </li>
           <li className="mt-5">
             <Link
-              to={"/"}
+              to={"/contact"}
               className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
             >
-              Sustainability
-            </Link>
-          </li>
-          <li className="mt-5">
-            <Link
-              to={"/"}
-              className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
-            >
-              News & Research
+              Contact Us
             </Link>
           </li>
         </ul>

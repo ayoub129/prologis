@@ -129,7 +129,7 @@ const FilterItems = ({ id, title, items, normal }) => {
           className="w-11/12 flex items-center mt-6 shadow bg-base-100 border-2"
         >
           {items.map((i) => (
-            <div key={i} className="form-control p-4">
+            <div key={i} className="form-control w-4/12 p-4">
               <label htmlFor={`${i}`} className="pb-2">
                 {i}
               </label>
@@ -141,7 +141,7 @@ const FilterItems = ({ id, title, items, normal }) => {
                 onChange={(e) => handlChange(e, i)}
                 value={i === "min" ? size.min : size.max}
                 placeholder={`${i}`}
-                className="p-2 rounded shadow border-1 outline-0 border-green-700 me-6 w-40"
+                className="p-2 rounded shadow border-1 outline-0 border-green-700 me-6 w-full lg:w-40"
               />
             </div>
           ))}
@@ -155,7 +155,7 @@ const FilterItems = ({ id, title, items, normal }) => {
         <div className=" mt-6 shadow bg-base-100 border-2 w-11/12">
           <form onSubmit={handlPriceSubmit} className="flex items-center">
             {items.map((i) => (
-              <div key={i} className="form-control p-4">
+              <div key={i} className="form-control w-4/12 p-4">
                 <label htmlFor={`${i}`} className="pb-2">
                   {i}
                 </label>
@@ -167,11 +167,11 @@ const FilterItems = ({ id, title, items, normal }) => {
                   onChange={(e) => handlPriceChange(e, i)}
                   value={i === "min" ? price.min : price.max}
                   placeholder={`${i}`}
-                  className="p-2 rounded shadow border-1 outline-0 border-green-700 me-6 w-40"
+                  className="p-2 rounded shadow border-1 outline-0 border-green-700 me-6 w-full lg:w-40"
                 />
               </div>
             ))}
-            <button type="submit" className="btn mt-5">
+            <button type="submit" className="btn lg:ml-6 mt-6 ">
               Filter
             </button>
           </form>
