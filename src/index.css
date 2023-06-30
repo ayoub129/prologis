@@ -57,7 +57,11 @@ body {
 
 @media (max-width: 700px) {
   .bg-career {
-    margin-bottom: 57rem;
+    margin-bottom: 68rem;
+  }
+
+  .bg-house {
+    margin-bottom: 50rem;
   }
 }
 

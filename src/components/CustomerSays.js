@@ -6,7 +6,7 @@ const CustomerSays = ({ bghouse, data }) => {
           bghouse ? "bg-house py-20" : "bg-career py-20 lg:pb-20"
         } flex flex-col relative  items-center justify-center font-bold text-white bg-overlay`}
       >
-        <h3 className="ml-10 text-4xl leading-12 w-6/12 text-center">
+        <h3 className="ml-0 md:ml-10 text-4xl leading-12 w-10/12 md:w-6/12 text-center">
           IN OUR CUSTOMERS WORDS
         </h3>
         <div className="flex top-12-rem left-5 flex-col lg:flex-row lg:justify-between  p-4 mt-12 w-11/12 md:w-8/12 mx-auto rounded absolute">

@@ -47,7 +47,7 @@ const Glance = () => {
         <h3 className="uppercase mb-10 lg:text-3xl md:text-2xl text-2xl font-bold text-green-700 tracking-wider">
           PROLOGIS AT A GLANCE
         </h3>
-        <div className="grid grid-cols-1   md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-11/12 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-11/12 mx-auto">
           {data.map((d) => (
             <div key={d.id} className="bg-base-200 rounded-b-lg p-5">
               <h5 className="text-green-700 text-3xl font-bold mb-3">

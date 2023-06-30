@@ -1,4 +1,26 @@
+import { useRef, useEffect } from "react";
+
 const Meet = () => {
+  const videoEl = useRef(null);
+  const videoEl2 = useRef(null);
+  const attemptPlay = () => {
+    videoEl &&
+      videoEl.current &&
+      videoEl.current.play().catch((error) => {
+        console.log("error attemting to play", error);
+      });
+
+    videoEl2 &&
+      videoEl2.current &&
+      videoEl2.current.play().catch((error) => {
+        console.log("error attemting to play", error);
+      });
+  };
+
+  useEffect(() => {
+    attemptPlay();
+  }, []);
+
   return (
     <div className="mt-20 py-20 bg-base-200">
       <div className="w-8/12 mx-auto md:flex md:items-center md:justify-between">
@@ -8,6 +30,7 @@ const Meet = () => {
             loop
             className="w-full lg:h-70 "
             playsInline
+            ref={videoEl}
             poster="assets/majo.jpg"
             controls
           >
@@ -26,6 +49,7 @@ const Meet = () => {
             loop
             className="w-full lg:h-70 "
             playsInline
+            ref={videoEl2}
             poster="assets/timor.jpg"
             controls
           >
