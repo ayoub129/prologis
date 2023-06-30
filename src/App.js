@@ -9,11 +9,13 @@ import Contact from "./pages/Contact";
 import { PrologisProvider } from "./context/PrologisContext";
 import Career from "./pages/Career";
 import Investor from "./pages/Investor";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <PrologisProvider>
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
