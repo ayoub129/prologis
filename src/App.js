@@ -8,6 +8,7 @@ import Cleaning from "./pages/Cleaning";
 import Contact from "./pages/Contact";
 import { PrologisProvider } from "./context/PrologisContext";
 import Career from "./pages/Career";
+import Investor from "./pages/Investor";
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/Careers" element={<Career />}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/Investor" element={<Investor />}></Route>
         </Routes>
       </Router>
     </PrologisProvider>

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ mt }) => {
   return (
-    <footer className="mt-28">
+    <footer className={`mt-${mt}`}>
       <div className="bg-gradiant text-center">
         <h3 className="pt-12 text-white text-3xl font-bold">
           LET'S GET STARTED
@@ -97,6 +97,14 @@ const Footer = () => {
             >
               Contact Us
             </Link>
+          </li>{" "}
+          <li className="mt-5">
+            <Link
+              to={"/Investor"}
+              className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
+            >
+              Investor Relations
+            </Link>
           </li>
         </ul>
       </div>
@@ -105,6 +113,10 @@ const Footer = () => {
       </p>
     </footer>
   );
+};
+
+Footer.defaultProps = {
+  mt: 28,
 };
 
 export default Footer;

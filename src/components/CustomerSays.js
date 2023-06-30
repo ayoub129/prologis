@@ -36,4 +36,8 @@ const CustomerSays = ({ bghouse, data }) => {
   );
 };
 
+CustomerSays.defaultProps = {
+  bghouse: true,
+};
+
 export default CustomerSays;
