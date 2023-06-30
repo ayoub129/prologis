@@ -72,6 +72,14 @@ const Footer = () => {
               Construction
             </Link>
           </li>
+          <li className="mt-5">
+            <Link
+              to={"/Careers"}
+              className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
+            >
+              Career
+            </Link>
+          </li>
         </ul>
         <ul className="text-center md:w-4/12 md:text-left">
           <li className="mt-5">

@@ -7,6 +7,7 @@ import Construction from "./pages/Construction";
 import Cleaning from "./pages/Cleaning";
 import Contact from "./pages/Contact";
 import { PrologisProvider } from "./context/PrologisContext";
+import Career from "./pages/Career";
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/contact" element={<Contact />}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/Careers" element={<Career />}></Route>
         </Routes>
       </Router>
     </PrologisProvider>
