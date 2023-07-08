@@ -56,7 +56,7 @@ const WorkWith = () => {
       <h3 className="text-green-700 font-bold tracking-wider mb-10">
         WE WORK WITH
       </h3>
-      <div className="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-11/12 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-11/12 mx-auto">
         {data.map((d) => (
           <WorkWithItem
             key={d.id}
