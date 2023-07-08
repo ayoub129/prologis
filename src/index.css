@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden !important;
+  font-family: Montserrat, sans-serif;
+}
+
+.bg-base-100,
+input,
+body {
+  background-color: white !important;
+}
+
+.bg-base-200,
+.btn {
+  background-color: hsl(0, 0%, 95%) !important;
+}
+
+.leading-12 {
+  line-height: 3rem;
+}
+
+.bg-development {
+  background-image: url(../assets/development.jpeg);
+}
+
+.bg-essentials-platform {
+  background-image: url(../assets/essentials_platform.jpeg);
+}
+
+.bg-real-estate {
+  background-image: url(../assets/real_estate.jpeg);
+}
+
+.bg-strategic {
+  background-image: url(../assets/strategic.jpeg);
+}
+
+.bg-house {
+  background-image: url(../assets/building/house1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 35rem;
+}
+
+.bg-career {
+  background-image: url(../assets/building/house1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 45rem;
+}
+
+@media (max-width: 700px) {
+  .bg-career {
+    margin-bottom: 68rem;
+  }
+
+  .bg-house {
+    margin-bottom: 50rem;
+  }
+}
+
+.bg-overlay {
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(20, 96, 97, 0.65);
+  transition: 0.7s all;
+}
+
+.no-overlay:hover {
+  background: rgba(20, 96, 97, 0.65);
+  transition: 0.7s all ease-out;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 80%;
+  height: fit-content;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.bg-video {
+  background: url(../assets/network.jpg) no-repeat;
+  background-size: cover;
+}
+
+.bg-missi {
+  background: url(../assets/Large-Mississauga.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  letter-spacing: 0.15em;
+}
+
+.leading-large {
+  line-height: 2.7rem;
+  margin-bottom: 1rem;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.border-1 {
+  border: 1px solid rgb(12, 105, 12);
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 30px;
+  right: 4rem;
+}
+
+footer .divider:before,
+footer .divider:after {
+  background-color: white !important;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.span-1:hover,
+.span-4:hover,
+.span-2:hover,
+.span-3:hover {
+  transition: 1s all ease;
+  grid-column: 1 / 3;
+}
+
+.span-1:has(+ .span-2:hover),
+.span-3:has(+ .span-4:hover) {
+  display: none;
+}
+
+.span-1:hover + .span-2,
+.span-3:hover + .span-4 {
+  display: none;
+}
+
+.span-1:hover .opacity-0,
+.span-3:hover .opacity-0 {
+  opacity: 1;
+  transition: 1s all ease;
+}
+
+.span-2:hover > p,
+.span-4:hover > p {
+  order: 2;
+}
+
+.span-1:hover > p,
+.span-4:hover > p,
+.span-2:hover > p,
+.span-3:hover > p {
+  width: 45%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.span-2:hover > p + p,
+.span-4:hover > p + p {
+  opacity: 1;
+  order: 1;
+  transition: 1s all ease;
+}
+
+footer .divider {
+  margin-top: 0.3rem !important;
+  margin-bottom: 2.5rem !important;
+}
+
+.bg-white:hover {
+  background-color: white !important;
+}
+
+.top-12-rem {
+  top: 12rem;
+}
+
+@media (min-width: 1070px) {
+  .absolute-hero {
+    right: 0;
+    top: 70%;
+  }
+
+  .bg-house {
+    margin-bottom: 20rem;
+    height: 15rem;
+  }
+
+  .bg-career {
+    margin-bottom: 23rem;
+    height: 20rem;
+  }
+
+  .top-12-rem {
+    top: 7rem !important;
+  }
+
+  .lg-absolute {
+    position: absolute;
+  }
+
+  .absolute {
+    right: 2rem;
+  }
+}
+
+.text-green-700 {
+  color: #187770 !important;
+}
+
+.bg-green-700 {
+  background-color: #187770 !important;
+}
+
+.bg-green-700:hover {
+  background-color: #187771b4 !important;
+}
+
+.hover\:bg-green-700:hover {
+  color: white !important;
+  background-color: #187770 !important;
+}
+
+.hover\:bg-green-700:hover .text-green-700 {
+  color: white !important;
+}
+
+.active-bg-green-700 {
+  color: white !important;
+  background-color: #187770 !important;
+}
+
+.active-bg-green-700 .text-green-700 {
+  color: white !important;
+}
+
+.bg-gradiant {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 82, 78, 0.85) 0%,
+    rgba(20, 96, 97, 0.85) 26.43%,
+    rgba(3, 97, 119, 0.85) 57.8%,
+    rgba(16, 67, 102, 0.85) 100%
+  ) !important;
+}
+
+.absolute-header {
+  background-image: linear-gradient(
+    260deg,
+    rgba(24, 146, 191, 0.9) -52%,
+    rgba(29, 149, 141, 0.9) 54%
+  );
+  color: white;
+}
+
+.swiper-wrapper {
+  align-items: center !important;
+}
+
+@media (min-width: 1070px) {
+  .cars {
+    max-height: 80vh !important;
+  }
+
+  #cars {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .ml-30 {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 778px) and (max-width: 1070px) {
+  .top-12-rem {
+    top: 9rem;
+  }
+}
+
+.address {
+  background-color: #f1f1f1;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.address .bedrijfsinformatie,
+.address .Adres,
+.address .openbaar {
+  margin: 3rem 0;
+}
+
+.bg-blue-400 {
+  background-color: rgb(44, 114, 138) !important;
+}
+
+.bg-green-900 {
+  background-color: #1b4d4a;
+}
