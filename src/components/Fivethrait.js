@@ -9,18 +9,14 @@ const Fivethrait = ({ header, src }) => {
             {header}
           </h2>
           <ol className="list-decimal md:mt-6 lg:mt-10 ml-5 lg:font-bold   text-white text-xl tracking-wide">
-            <li className="mt-2">
-              We are dedicated to our customers’ success.
-            </li>
-            <li className="mt-2">We create the future.</li>
-            <li className="mt-2">We embrace change.</li>
-            <li className="mt-2">
-              We listen, question, then commit to each other.
-            </li>
-            <li className="mt-2">We simplify and sprint.</li>
+            <li className="mt-2">Client-centric excellence: Exceeding expectations, delivering value.</li>
+            <li className="mt-2">Entrepreneurial mindset: Innovate, risk, improve.</li>
+            <li className="mt-2"> Excellence and integrity: Ethical, respectful, high standards.</li>
+            <li className="mt-2">Collaboration and teamwork: Together, diverse, shared ideas.</li>
+            <li className="mt-2">Growth-oriented mindset: Embrace challenges, continuous learning.</li>
           </ol>
           <p className="py-7 lg:text-xl md:text-sm font-light tracking-wider text-white mr-5">
-            Sound like you? Join the Prologis team and be the difference.
+          Sound like you? Join the Hercules Group Company and make a significant impact.
           </p>
         </div>
       </div>
