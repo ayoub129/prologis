@@ -6,7 +6,7 @@ import ContactForm from "../components/ContactForm";
 const Contact = () => {
   return (
     <div>
-      <Hero src="assets/how-we-work-hero.jpg" />
+      <Hero src="assets/how-we-work-hero8.jpg" />
       <h4
         className="px-10"
         style={{
