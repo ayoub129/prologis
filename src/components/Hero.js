@@ -4,7 +4,7 @@ const Hero = ({ header, text, src, isVideo }) => {
   return (
     <div className="w-full  mb-8">
       {isVideo ? <Video src={src} /> : <img src={src} alt="hero" />}
-      {text ? (
+      {header ? (
         <div className="w-full text-center bg-gradiant">
           <h2 className="uppercase text-white pt-8 tracking-wider leading-12 text-3xl w-9/12 mx-auto md:text-4xl font-bold ">
             {header}
