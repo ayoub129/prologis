@@ -17,7 +17,7 @@ const News = ({ data }) => {
             <h3 className="uppercase text-xl p-6 font-bold text-green-700 tracking-wider">
               {d.Title}
             </h3>
-            <p className="p-6 pt-0">{d.date}</p>
+            <p className="p-6 pt-0" style={{color:"black"}}>{d.date}</p>
           </div>
         ))}
       </div>
