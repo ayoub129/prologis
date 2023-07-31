@@ -35,8 +35,8 @@ const Properties = () => {
 
       <Thriving
         src="assets/constructers.jpg"
-        Text="Prologis Essentials makes it easier for our customers to do business. you can easily manage your property, find warehouse solution, contact support and more .. all in one convenient online location."
-        Title={"DISCOVER PROLOGIS ESSENTIALS"}
+        Text="Hercules Group's Essentials simplifies business operations for our esteemed customers. With our user-friendly online platform, you can effortlessly oversee your properties, explore warehouse solutions, connect with our support team, and enjoy an array of convenient features, all in a single centralized hub."
+        Title={"INTRODUCING HERCULES GROUP'S ESSENTIALS"}
       />
       <Footer />
     </div>
