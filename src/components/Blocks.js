@@ -2,26 +2,26 @@ const Blocks = () => {
   const data = [
     {
       id: 1,
-      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      title: "Development & Acquisitions",
+      subtitle: "Refining Morocco's skyline, one development at a time.",
+      title: "Development",
       image: "development",
     },
     {
       id: 2,
-      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      title: "The Essentials Platform",
+      subtitle: "Your go-to provider for end-to-end construction solutions, ensuring seamless project execution.",
+      title: "Construction",
       image: "essentials-platform",
     },
     {
       id: 3,
-      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      title: "Real Estate Operations",
+      subtitle: "Bringing a touch of elegance and simplicity to your spaces with our innovative interior design solutions.",
+      title: "Interior Design",
       image: "real-estate",
     },
     {
       id: 4,
-      subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      title: "Strategic Capital",
+      subtitle: "Navigating your investments towards sustainable growth and long-term profitability.",
+      title: "Management",
       image: "strategic",
     },
   ];
@@ -30,15 +30,13 @@ const Blocks = () => {
       <div className="w-11/12 md:flex md:flex-col lg:flex-row md:items-center md:w-9/12 lg:7/12 mx-auto py-16">
         <div className="md:w-10/12 md:mr-10">
           <h2 className="uppercase font-bold text-3xl tracking-wide text-green-700">
-            THE BUILDING BLOCKS OF YOUR SUCCESS
+          LAYING THE FOUNDATIONS OF YOUR SUCCESS
           </h2>
           <p className="py-7 text-xl font-light tracking-wider text-base-400">
-            At Prologis we do things differently. We take the time to listen to
-            you and understand your needs because we know that success means
-            paying attention to the things that really matter.
+          At Hercules Group, we believe in doing things differently. We understand that your success lies in the details, which is why we listen and adapt to your needs.
           </p>
           <p className="text-xl font-light tracking-wider text-base-400">
-            See how we can help you stay ahead of what's next.
+          See how we can help you stay ahead of what's next.
           </p>
         </div>
         <div className="grid gap-4 mt-7 grid-cols-2">
