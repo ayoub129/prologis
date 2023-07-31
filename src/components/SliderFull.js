@@ -13,10 +13,7 @@ const SliderFull = ({ data }) => {
           WE MAKE A DIFFERENCE
         </h2>
         <p className="py-7 text-xl font-light tracking-wider text-base-400">
-          When you join Prologis you’ll be able to make a meaningful difference
-          in the communities you serve. We offer a variety of ways to give
-          back—like company paid time to volunteer and IMPACT Day, our global
-          day of service.
+        When you join Hercules Group, you become part of a team that is dedicated to making a difference. We actively contribute to the communities we serve through various initiatives, including volunteer programs, charitable partnerships, and sustainable practices. Together, we can create a positive impact that extends beyond our business operations.
         </p>
         <Swiper
           effect={"coverflow"}
