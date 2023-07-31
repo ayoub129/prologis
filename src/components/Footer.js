@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 
-const Footer = ({ mt }) => {
+const Footer = ({ mt, title, text }) => {
   return (
     <footer className={`mt-${mt}`}>
       <div className="bg-gradiant text-center">
-        <h3 className="pt-12 text-white text-3xl font-bold">
-          LET'S GET STARTED
+        <h3 className="pt-12 text-white text-3xl font-bold mx-5	">
+
+        {title}
         </h3>
         <p className="mt-5 md:text-2xl text-white md:font-light md:tracking-wider md:text-base-400 w-10/12 mx-auto">
-          Every connection starts with a conversation. Our team is here to help.
+        {text}
         </p>
         <ul className="mt-10 md:flex md:items-center md:justify-between pb-24 md:w-10/12 md:mx-auto">
           <li className="mb-16 md:mb-0">
@@ -22,17 +23,17 @@ const Footer = ({ mt }) => {
           <li className="mb-16 md:mb-0">
             <Link
               className="text-white border-b-2 border-white transition duration-500 hover:border-2 p-2 transition"
-              to={"/properties"}
+              to={"/Investor"}
             >
-              Properties
+              Investor Relations
             </Link>
           </li>
           <li className="mb-8 md:mb-0">
             <Link
               className=" text-white border-b-2 border-white transition duration-500 hover:border-2 p-2 transition"
-              to={"/Construction"}
+              to={"/Careers"}
             >
-              Construction
+               Careers
             </Link>
           </li>
         </ul>
@@ -84,10 +85,10 @@ const Footer = ({ mt }) => {
         <ul className="text-center md:w-4/12 md:text-left">
           <li className="mt-5">
             <Link
-              to={"/Cleaning"}
+              to={"/InteriorDesign"}
               className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
             >
-              Cleaning
+              Interior Design
             </Link>
           </li>
           <li className="mt-5">
@@ -109,7 +110,7 @@ const Footer = ({ mt }) => {
         </ul>
       </div>
       <p className="mt-20 mb-5 text-center">
-        &copy; {new Date().getFullYear()} Prologis . All rights reserved.
+        &copy; {new Date().getFullYear()} HERCULES GROUP . All rights reserved.
       </p>
     </footer>
   );
