@@ -14,30 +14,30 @@ const Home = () => {
       src: "assets/howwework.jpg",
       Title: "HOW WE WORK",
       paragraph:
-        "To deliver the best spaces and places for customers, employees and the local community, we partner with landowners, the public sector and local community groups. Our core values embodied in IMPACT are what make us unique and are essential to building a culture of enduring excellence.",
+        "We believe in creating the best environments for our clients, employees, and community members. This includes collaborating with landowners, public sectors, and community groups. Our core values are an integral part of our identity, setting us apart and driving us towards a culture of continuous excellence.",
       action: "Learn More About How We Work",
       small:
-        "Our relationships with customers, employees and communities are measured in decades as we strive to always be a good neighbor.",
+        "At Hercules Group, we strive to build enduring relationships with our clients, employees, and communities. We work diligently towards being the ideal partner, nurturing these connections for mutual growth.",
     },
     {
       id: 2,
       src: "assets/ourbusiness.jpg",
       Title: "OUR BUSINESS",
       paragraph:
-        "We have a long-term interest in the properties we create. For us, it’s about so much more than creating buildings: we create spaces and places where our customers’ businesses can thrive, where their employees enjoy coming to work and where local communities and wildlife can flourish. These values influence everything we do and are a living, breathing part of our culture.",
+        "Our interest extends beyond just the properties we develop and construct. We aim to create spaces where businesses can excel, where employees love to work, and where local communities and the environment can benefit. These values are more than just words to us – they are the ethos that defines our work culture.",
       action: "Learn More About What We Do",
       small:
-        "We deliver logistics solutions and services at scale so you can thrive and grow your business.",
+        "We provide extensive construction, development, and real estate services to empower your business's growth and prosperity.",
     },
     {
       id: 3,
       src: "assets/betterfuture.jpg",
-      Title: "BETTER FUTURE",
+      Title: "A BETTER FUTURE",
       paragraph:
         "Like you, we believe sustainability is good business. We strive to be a trusted, long-term partner that maximizes return to our stakeholders while minimizing environmental impacts.",
       action: "Discover Our Impact",
       small:
-        "Like you, we believe sustainability is just good business. Over the last four decades, we've made it part of ours.",
+        "We are committed to being a responsible business partner, seeking to provide superior returns for our stakeholders while reducing our environmental footprint. We consider sustainability a critical aspect of our operations, and we are dedicated to making a positive impact.",
     },
   ];
   return (
@@ -45,20 +45,17 @@ const Home = () => {
       <Hero
         isVideo={true}
         src="assets/video.mp4"
-        header="CELEBRATING 40 YEARS OF PROLOGIS"
-        text="EXPLORE OUR 40 YEAR HISTORY "
+        header="CELEBRATING THE FOUNDING OF HERCULES GROUP"
+        text="EXPLORE OUR JOURNEY"
       />
       <Cards />
       <Blocks />
       <Slider data={sliderData} />
       <Thriving
-        link="/"
+        link="/contact"
         src="assets/Customer-Service.jpg"
-        Text="Your business matters to us. Whether you’re a start-up venture or a
-            multinational company, we’ll give you access to the buildings,
-            people and solutions your business needs to thrive and succeed year
-            after year."
-        Title={"START THRIVING"}
+        Text="Your business is important to us. Whether you're a startup or a multinational corporation, we provide you access to the right properties, skilled people, and innovative solutions you need to succeed year after year."
+        Title={"EMBRACE SUCCESS"}
       />
       <Global />
       <Footer />
