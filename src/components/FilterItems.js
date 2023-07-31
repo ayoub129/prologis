@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState, useContext , useEffect } from "react";
 import PrologisContext from "../context/PrologisContext";
 import {
   FilterProperty,
@@ -11,7 +11,7 @@ import {
   AiOutlineArrowUp,
   AiOutlineSearch,
 } from "react-icons/ai";
-import { Propertiesdata } from "./Propertiesdata";
+import Supabase from "./Supabase";
 
 const FilterItems = ({ id, title, items, normal }) => {
   const { dispatch } = useContext(PrologisContext);
@@ -22,6 +22,26 @@ const FilterItems = ({ id, title, items, normal }) => {
   const [Error, setError] = useState("");
   const [brand, setBrand] = useState("");
 
+
+  const [properties, setProperties] = useState([]);
+
+  useEffect(() => {
+    // Fetch data from the 'properties' table in your Supabase project
+    const fetchData = async () => {
+      const { data: houses_cars, error } = await Supabase.from('houses-cars').select('*');
+      if (error) {
+        console.error('Error fetching data:', error);
+      } else {
+        setProperties(houses_cars);
+        console.log(houses_cars)
+      }
+    };
+
+    fetchData();
+     // eslint-disable-next-line
+    }, [Supabase]);
+
+
   const handleChecked = (item, position) => {
     const updateCheckedState = checkedState.map((i, index) =>
       index === position ? !i : false
@@ -30,7 +50,7 @@ const FilterItems = ({ id, title, items, normal }) => {
     setCheckedState(updateCheckedState);
 
     if (checkedState[position] === false) {
-      const FilterResult = FilterProperty(item, Propertiesdata);
+      const FilterResult = FilterProperty(item, properties);
       dispatch({
         type: "FILTER_PROPERTIES",
         payload: FilterResult,
@@ -47,8 +67,7 @@ const FilterItems = ({ id, title, items, normal }) => {
         setError("");
       }, 3000);
     } else {
-      const FilterResult = FilterSize(size, Propertiesdata);
-      console.log(FilterResult);
+      const FilterResult = FilterSize(size, properties);
       dispatch({
         type: "FILTER_SIZE",
         payload: FilterResult,
@@ -73,7 +92,7 @@ const FilterItems = ({ id, title, items, normal }) => {
         setError("");
       }, 3000);
     } else {
-      const FilterResult = FilterPrice(price, Propertiesdata);
+      const FilterResult = FilterPrice(price, properties);
       console.log(FilterResult);
       dispatch({
         type: "FILTER_PRICE",
@@ -97,7 +116,7 @@ const FilterItems = ({ id, title, items, normal }) => {
   const handlBrandSubmit = (e) => {
     e.preventDefault();
 
-    const carsData = Propertiesdata.filter((d) => d.type === "Cars");
+    const carsData = properties.filter((d) => d.type === "Cars");
 
     const FilterResult = FilterBrand(brand, carsData);
     dispatch({
