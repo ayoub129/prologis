@@ -5,6 +5,7 @@ import Financials from "../components/Financials";
 import Report from "../components/Report";
 import Glance from "../components/Glance";
 import Research from "../components/Research";
+import Corporate from "../components/Corporate";
 
 const Investor = () => {
   const newsData = [
@@ -12,19 +13,19 @@ const Investor = () => {
       id: 1,
       src: "assets/ourpeople.jpg",
       Title:
-        "Prologis to Acquire 14MSF Blackstone Industrial Portfolio in $3.1 Billion Deal",
-      date: "Jun 26, 2023 • 8:00am EDT",
+        "Hercules Group secures strategic partnerships",
+      date: "Hercules Group secures strategic partnerships with experienced contractors and talented architects, paving the way for future high-profile residential and commercial projects. Stay tuned for more exciting news and updates about our projects and collaborations.",
     },
     {
       id: 2,
-      Title: "Prologis to Announce Second Quarter 2023 Results July 18",
-      date: "Jun 22, 2023 • 4:30pm EDT",
+      Title: "Annual Investor Event",
+      date: "Join us at our annual Investor Event to learn more about Hercules Group's achievements, our vision for the future, and exciting investment opportunities. Our next event will be announced soon.",
     },
     {
       id: 3,
       Title:
-        "Prologis to Participate in REITWeek 2023: NAREIT's Investor Forum",
-      date: "Jun 5, 2023 • 8:30am EDT",
+        "About Hercules Group",
+      date: "Hercules Group is a dynamic real estate start-up in Morocco that combines innovative design, quality construction, and strategic management services. We leverage our local understanding and international exposure to create high-quality, sustainable living spaces that cater to the modern Moroccan lifestyle.",
     },
   ];
 
@@ -32,12 +33,16 @@ const Investor = () => {
     <div>
       <Hero
         src="assets/hero-img.jpg"
-        header="Q2 2023 EARNINGS CONFERENCE CALL"
-        text="JULY 18, 2023 - 11:00 AM ET"
+        header="Investor Relations - Hercules Group"
+        // text="JULY 18, 2023 - 11:00 AM ET"
       />
       <News data={newsData} />
       <Financials />
       <Report />
+      <Corporate margin={true}
+      section="Investment Opportunities"
+      title="WE'VE BUILT A range of investment opportunities"
+      text="Hercules Group offers a range of investment opportunities tailored to suit the needs of our investors. From equity investments to strategic partnerships, we provide a platform for you to be part of Morocco's thriving real estate sector. For more details on investment opportunities, please contact us. " />
       <Glance />
       <Research />
       <Footer mt={0} />
