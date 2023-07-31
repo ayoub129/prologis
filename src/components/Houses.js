@@ -1,9 +1,34 @@
 import PrologisContext from "../context/PrologisContext";
-import { useContext } from "react";
+import { useContext , useEffect } from "react";
 import PropertiesCard from "./PropertiesCard";
+import Supabase from "./Supabase";
+import { FilterProperty } from "../context/PrologisActions"
+
 
 const Houses = ({ grid }) => {
   const { properties } = useContext(PrologisContext);
+  const { dispatch } = useContext(PrologisContext);
+
+  useEffect(() => {
+    // Fetch data from the 'properties' table in your Supabase project
+    const fetchData = async () => {
+      const { data: houses_cars, error } = await Supabase.from('houses-cars').select('*');
+      if (error) {
+        console.error('Error fetching data:', error);
+      } else {
+        const FilterResult = FilterProperty("All", houses_cars);
+        dispatch({
+          type: "FILTER_PROPERTIES",
+          payload: FilterResult,
+        });
+      }
+    };
+
+    fetchData();
+
+     // eslint-disable-next-line
+    }, []);
+
 
   return (
     <div
