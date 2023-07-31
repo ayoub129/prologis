@@ -12,58 +12,58 @@ const Career = () => {
     {
       id: 1,
       src: "assets/ourpeople.jpg",
-      Title: "We put people first",
+      Title: "Putting People First: Our Foundation for Success",
       paragraph:
-        "Our people drive our success. That’s why we’ve built a culture of personal and professional empowerment.",
+        "At Hercules Group, our success is built on the foundation of our people. We believe in creating an environment that values and supports the growth and well-being of our team members. Our culture is characterized by a strong sense of camaraderie, collaboration, and personal development.",
       action: "Expolore open position",
       small:
-        "Our people drive our success. That’s why we’ve built a culture of personal and professional...",
+        "At Hercules Group, we prioritize the well-being and growth of our team members. Our culture fosters camaraderie...",
     },
     {
       id: 2,
       src: "assets/commited.jpg",
       Title: "We're committed to inclusion & diversity",
       paragraph:
-        "Inclusion and belonging matters at Prologis. We intentionally build diverse teams with varying backgrounds, perspectives and experiences.",
+        "Diversity and inclusion are at the core of who we are. We recognize that a diverse team brings together unique perspectives, experiences, and talents, which fuel our innovation and drive our success. We actively foster an inclusive workplace that embraces individuals from all backgrounds, cultures, and walks of life.",
       action: "Expolore open position",
       small:
-        "Inclusion and belonging matters at Prologis. We intentionally build ...",
+        "Diversity and inclusion are at the core of who we are. We recognize that a diverse team brings together unique perspectives, experiences ...",
     },
     {
       id: 3,
       src: "assets/future.jpg",
-      Title: "We create the future",
+      Title: "Shaping the Future: Innovation and Disruption at Hercules Group",
       paragraph:
-        "We push boundaries and explore new horizons to stay ahead of what's next.",
+        "Innovation is at the heart of everything we do. As a forward-thinking organization, we constantly seek new ways to disrupt the real estate industry, push boundaries, and shape the future. We encourage our team members to think outside the box, challenge conventions, and explore innovative solutions that deliver exceptional value to our clients.",
       action: "Expolore open position",
       small:
-        "We push boundaries and explore new horizons to stay ahead of what's next.",
+        "Innovation is at the heart of everything we do. As a forward-thinking organization...",
     },
     {
       id: 4,
       src: "assets/listen.jpg",
       Title: "We listen, question, and commit",
       paragraph:
-        "We challenge our own best ideas. We work together to achieve results.",
+        "Collaboration is a fundamental pillar of our culture. We believe in the power of open communication, active listening, and constructive questioning. We encourage our team members to challenge the status quo, share their ideas, and engage in meaningful discussions. By fostering a culture of mutual respect and collaboration, we create an environment where everyone's voice is heard, and collective commitment leads to extraordinary outcomes.",
       action: "Expolore open position",
-      small: "We challenge our own best ideas. We work together ...",
+      small: "Collaboration is a fundamental pillar of our culture. We believe in the power of open communication ...",
     },
   ];
 
   const customerData = [
     {
       id: 1,
-      Title: "STEVEN HUSSAIN",
-      subTitle: "DALLAS, TEXAS",
+      Title: "Douae Jawhari",
+      subTitle: "Community Workforce Initiative Coordinator",
       src: "assets/stevan.jpg",
-      text: "When I saw an opening to support the Community Workforce Initiative effort, I thought it could be a perfect fit for me to really leverage the skills I had from the public sector and apply them in a new and innovative context.",
+      text: "«Joining Hercules Group has allowed me to leverage my skills and expertise in a new and exciting context. The company's commitment to making a positive impact in the community aligns perfectly with my own values, making it an ideal fit for me.»",
     },
     {
       id: 2,
-      Title: "NICOLA NEWLAND",
-      subTitle: "SOLIHULL, UK",
+      Title: "Ahmed Makhloufi",
+      subTitle: "Project Manager",
       src: "assets/nicola.jpg",
-      text: "I help the UK Project Management team deliver world class buildings to our customers and Prologis gives me the purpose and motivation to produce my best work. There is a real sense of collaboration and mutual respect, which gives me the courage and drive to push myself out of my comfort zone, embrace change and take on new challenges. I couldn’t imagine a better (and more fun) place to work!",
+      text: "«Hercules Group is a place where innovation, collaboration, and personal growth thrive. The support and trust I receive from my colleagues and leaders have empowered me to step out of my comfort zone, embrace change, and achieve remarkable outcomes. It's a dynamic and inspiring environment to work in.»",
     },
   ];
 
@@ -100,7 +100,7 @@ const Career = () => {
       <Slider p={true} data={sliderData} />
       <Meet />
       <Fivethrait
-        header={"FIVE TRAITS THAT DRIVE OUR CULTURE"}
+        header={"Our culture is shaped by five key traits that drive our success:"}
         src={"assets/five.jpg"}
       />
       <CustomerSays bghouse={false} data={customerData} />
