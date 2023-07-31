@@ -10,8 +10,8 @@ const Navbar = () => {
     <div>
       <div className="navbar bg-base-100 mx-5 md:container md:mx-auto md:py-8">
         <div className="flex-1 md:flex-none lg:flex-none xl:flex-none">
-          <Link to="/" className="w-32">
-            <img src="assets/logo.svg" alt="Logo" className="w-full" />
+          <Link to="/" className="w-48">
+            <img src="assets/logo.png" alt="Logo" className="w-full" />
           </Link>
         </div>
 
@@ -62,17 +62,17 @@ const Navbar = () => {
             <li className="ms-6">
               <Link
                 className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
-                to="/Cleaning"
+                to="/InteriorDesign"
               >
-                Cleaning
+                Interior Design
               </Link>
             </li>
             <li className="ms-6">
               <Link
                 className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
-                to="/contact"
+                to="/Management"
               >
-                Contact Us
+                Management
               </Link>
             </li>
           </ul>
@@ -120,20 +120,49 @@ const Navbar = () => {
           <li className="ms-6">
             <Link
               className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
-              to="/Cleaning"
+              to="/InteriorDesign"
             >
-              Cleaning
+              INTERIOR DESIGN
             </Link>
           </li>
           <div className="divider"></div>
           <li className="ms-6 pb-6">
             <Link
               className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
-              to="/contact"
+              to="/Management"
             >
-              Contact Us
+              Management
             </Link>
           </li>
+          <div className="divider"></div>
+          <li className="ms-6">
+            <Link
+              className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
+              to="/Investor"
+            >
+              Investor Relations
+            </Link>
+          </li>
+          <div className="divider"></div>
+          <li className="ms-6">
+            <Link
+              className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
+              to="/Careers"
+            >
+              Careers
+            </Link>
+          </li>
+          <div className="divider"></div>
+          <li className="ms-6">
+            <Link
+              className="transition ease-in-out duration-500 text-green-700 font-semibold py-1 hover:border-b-2 hover:border-green-700 hover:border-solid"
+              to="/contact"
+            >
+              Contact
+            </Link>
+
+          </li>
+          <div className="divider"></div>
         </ul>
       ) : null}
     </div>
