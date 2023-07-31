@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar bg-base-100 mx-5 md:container md:mx-auto md:py-8">
+      <div className="navbar bg-base-100 mx-5 md:container md:mx-auto md:py-5">
         <div className="flex-1 md:flex-none lg:flex-none xl:flex-none">
           <Link to="/" className="w-48">
             <img src="assets/logo.png" alt="Logo" className="w-full" />
