@@ -9,37 +9,27 @@ import Contact from "./pages/Contact";
 import { PrologisProvider } from "./context/PrologisContext";
 import Career from "./pages/Career";
 import Investor from "./pages/Investor";
+import Management from "./pages/Management";
 import ScrollToTop from "./components/ScrollToTop";
+import NavTop from "./components/NavTop";
 
 function App() {
   return (
     <PrologisProvider>
       <Router>
         <ScrollToTop />
+        <NavTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
-        </Routes>
-        <Routes>
           <Route path="/Development" element={<Development />}></Route>
-        </Routes>
-        <Routes>
           <Route path="/properties" element={<Properties />}></Route>
-        </Routes>
-        <Routes>
           <Route path="/Construction" element={<Construction />}></Route>
-        </Routes>
-        <Routes>
-          <Route path="/Cleaning" element={<Cleaning />}></Route>
-        </Routes>
-        <Routes>
+          <Route path="/InteriorDesign" element={<Cleaning />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-        </Routes>
-        <Routes>
           <Route path="/Careers" element={<Career />}></Route>
-        </Routes>
-        <Routes>
           <Route path="/Investor" element={<Investor />}></Route>
+          <Route path="/Management" element={<Management />}></Route>
         </Routes>
       </Router>
     </PrologisProvider>
