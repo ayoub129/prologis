@@ -28,26 +28,26 @@ const HomeCards = () => {
   const data = [
     {
       id: 1,
-      src: "assets/broadmoor.jpeg",
-      Title: "Real Estate: A Foundation for Growth",
+      src: "assets/broadmoor.jpg",
+      Title: "A Complete Service Spectrum",
       paragraph:
-        "We own and operate the premier logistics real estate portfolio in the markets that matter.",
+        "At Hercules Group, we are your comprehensive hub for all your construction, development, and real estate needs. We take immense pride in being a one-stop solution, orchestrating every phase of the process. Whether it's conceptualising a project, bringing it to life through meticulous construction, managing the complexities of real estate, or ensuring an impeccable sale, Hercules Group is there with you every step of the way.",
       action: "search for properties",
     },
     {
       id: 2,
-      src: "assets/automation.jpeg",
-      Title: "The Essentials Platform",
+      src: "assets/automation.jpg",
+      Title: "Unmatched Quality and Profound Experience",
       paragraph:
-        "If it's essential, we have the solution. The only platform of its kind to deliver end-to-end solutions across all segments of fulfillment.",
+        "Our team is an ensemble of highly experienced and diverse professionals, bringing together decades of experience and a wide range of skills. With our extensive 30+ years in construction, our fresh architectural insights, and our profound expertise in properties, Hercules Group guarantees exceptional quality and service. We breathe life into projects with a perfect blend of traditional craftsmanship and modern innovation, delivering results that not only meet but exceed expectations.",
       action: "search for properties",
     },
     {
       id: 3,
       src: "assets/GB22_Logo.jpg",
-      Title: "GROUNDBREAKERS",
+      Title: "Your Vision, Our Mission",
       paragraph:
-        "Read the latest issue of GROUNDBREAKERS Magazine, and watch our thought leadership event on demand.",
+        "At Hercules Group, our clients are at the heart of everything we do. We listen, we understand, and we deliver. From the very first vision to the final execution, we are committed to turning your dreams into reality. We provide a bespoke service, tailoring our solutions to your unique needs and ensuring that you remain involved and informed every step of the way. With Hercules Group, you're not just getting a service provider, but a partner dedicated to making your vision come to life.",
       action: "search for properties",
     },
   ];
@@ -72,7 +72,7 @@ const HomeCards = () => {
           <div className="form-control w-full ">
             <label className="label">
               <span className="label-text ">
-                Search by Location or Postal Code
+                Search by City
               </span>
             </label>
             <form onSubmit={handleSubmit} className="flex mt-4 md:w-full">
