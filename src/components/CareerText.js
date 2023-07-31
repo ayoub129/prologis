@@ -6,15 +6,14 @@ const CareerText = () => {
       <div className="bg-blue-400 ">
         <div className="w-11/12 md:w-10/12 lg:w-8/12 mx-auto">
           <h2 className="uppercase pt-16 font-bold text-3xl tracking-wide text-white">
-            BUILD A CAREER WITH US
+          {"Come and join Hercules Group".toUpperCase()}
           </h2>
           <p className="py-7 pb-16 text-xl font-light tracking-wider text-white">
-            If you want to be a part of a leading global company with a passion
-            for innovation and a drive to succeed, we want to hear from you.
+          where our values, culture, and commitment to excellence set us apart. Together, we can shape the future of the real estate industry and make a meaningful difference in the lives of our clients, team members, and communities.
           </p>
         </div>
       </div>
-      <div className="bg-base-200 ">
+      {/* <div className="bg-base-200 ">
         <div className="w-11/12 md:w-10/12 lg:w-8/12 mx-auto">
           <h2 className="uppercase pt-16 font-bold text-3xl tracking-wide text-green-700">
             ACCESSIBILITY REQUEST
@@ -63,7 +62,7 @@ const CareerText = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
