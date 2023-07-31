@@ -1,45 +1,45 @@
 const Glance = () => {
   const data = [
-    {
-      id: 1,
-      Title: "$208B",
-      text: "Assets Under Management",
-    },
-    {
-      id: 2,
-      Title: "$5.2B",
-      text: "Annual Net Operating Income",
-    },
+    // {
+    //   id: 1,
+    //   Title: "$208B",
+    //   text: "Assets Under Management",
+    // },
+    // {
+    //   id: 2,
+    //   Title: "$5.2B",
+    //   text: "Annual Net Operating Income",
+    // },
     {
       id: 3,
-      Title: "1.2B",
+      Title: "260,000",
       text: "Square Feet",
     },
     {
       id: 4,
-      Title: "5,489",
-      text: "Buildings",
+      Title: "136",
+      text: "Properties",
     },
     {
       id: 5,
-      Title: "19",
-      text: "Countries",
+      Title: "6",
+      text: "Cities",
     },
     {
       id: 6,
-      Title: "6,600",
+      Title: "360",
       text: "Customers",
     },
-    {
-      id: 7,
-      Title: "96.0%",
-      text: "USD Net Equity",
-    },
-    {
-      id: 8,
-      Title: "A / A3",
-      text: "Credit Ratings*",
-    },
+    // {
+    //   id: 7,
+    //   Title: "96.0%",
+    //   text: "USD Net Equity",
+    // },
+    // {
+    //   id: 8,
+    //   Title: "A / A3",
+    //   text: "Credit Ratings*",
+    // },
   ];
   return (
     <div className="py-12">
