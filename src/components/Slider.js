@@ -61,13 +61,13 @@ const Slider = ({ p, data }) => {
                   <h2 className="card-title text-green-700">{d.Title}</h2>
                   <p className="text-xs md:hidden lg:block">{d.small}</p>
                 </div>
-                <figure className="pr-4 w-8/12 ">
+                {/* <figure className="pr-4 w-8/12 ">
                   <img
                     className="md:hidden lg:block"
                     src={d.src}
                     alt={d.Title}
                   />
-                </figure>
+                </figure> */}
               </div>
             ))}
           </div>
