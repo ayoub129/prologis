@@ -14,7 +14,7 @@ const Thriving = ({ Title, Text, src, link }) => {
           </p>
           {link && (
             <Link className="text-green-700 hidden md:block" to={link}>
-              SEE HOW IT WORKS
+              LET US SHOW YOU HOW IT WORKS
               <AiOutlineArrowRight className="inline-block mb-1" />
             </Link>
           )}
@@ -22,7 +22,7 @@ const Thriving = ({ Title, Text, src, link }) => {
         <img src={src} alt="customer service" className="mb-5 md:w-6/12" />
         {link && (
           <Link className="text-green-700 md:hidden" to={link}>
-            SEE HOW IT WORKS
+            LET US SHOW YOU HOW IT WORKS
             <AiOutlineArrowRight className="inline-block mb-1" />
           </Link>
         )}
