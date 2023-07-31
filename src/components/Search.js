@@ -1,12 +1,30 @@
 import { AiOutlineSearch } from "react-icons/ai";
-import { useState, useContext } from "react";
+import { useState, useContext , useEffect } from "react";
 import PrologisContext from "../context/PrologisContext";
 import { SearchProperties } from "../context/PrologisActions";
-import { Propertiesdata } from "./Propertiesdata";
+import Supabase from "../components/Supabase";
 
 const Search = () => {
   const { dispatch } = useContext(PrologisContext);
   const [text, setText] = useState("");
+
+  const [properties, setProperties] = useState([]);
+
+  useEffect(() => {
+    // Fetch data from the 'properties' table in your Supabase project
+    const fetchData = async () => {
+      const { data: houses_cars, error } = await Supabase.from('houses-cars').select('*');
+      if (error) {
+        console.error('Error fetching data:', error);
+      } else {
+        setProperties(houses_cars);
+      }
+    };
+
+    fetchData();
+    // eslint-disable-next-line
+  }, [Supabase]);
+
 
   const handleChange = (e) => {
     setText(e.target.value);
@@ -14,7 +32,7 @@ const Search = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const searchResult = SearchProperties(text, Propertiesdata);
+    const searchResult = SearchProperties(text, properties);
     dispatch({
       type: "SEARCH_PROPERTIES",
       payload: searchResult,
