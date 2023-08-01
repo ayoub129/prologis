@@ -42,7 +42,7 @@ const Footer = ({ mt, title, text }) => {
         <div className="w-40 md:w-4/12 mx-auto md:mx-0 my-7">
           <Link to={"/"}>
             <img
-              src="assets/logo.svg"
+              src="assets/logo.png"
               className="w-full md:w-7/12"
               alt="Logo"
             />
