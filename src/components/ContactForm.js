@@ -40,7 +40,7 @@ const ContactForm = () => {
           <span>T:</span> 076-5428436
         </p>
         <p>
-          <span>E:</span> info@prologis.com
+          <span>E:</span> info@herculesgroup.ma
         </p>
         <form onSubmit={handleSubmit}>
           <input
