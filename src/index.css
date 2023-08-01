@@ -343,20 +343,20 @@ footer .divider {
 }
 
 .text-green-700 {
-  color: #187770 !important;
+  color: #E2AB73 !important;
 }
 
 .bg-green-700 {
-  background-color: #187770 !important;
+  background-color: #E2AB73 !important;
 }
 
 .bg-green-700:hover {
-  background-color: #187771b4 !important;
+  background-color: #E2AB74b4 !important;
 }
 
 .hover\:bg-green-700:hover {
   color: white !important;
-  background-color: #187770 !important;
+  background-color: #E2AB73 !important;
 }
 
 .hover\:bg-green-700:hover .text-green-700 {
@@ -365,7 +365,7 @@ footer .divider {
 
 .active-bg-green-700 {
   color: white !important;
-  background-color: #187770 !important;
+  background-color: #E2AB73 !important;
 }
 
 .active-bg-green-700 .text-green-700 {
@@ -375,10 +375,10 @@ footer .divider {
 .bg-gradiant {
   background: linear-gradient(
     45deg,
-    rgba(0, 82, 78, 0.85) 0%,
-    rgba(20, 96, 97, 0.85) 26.43%,
-    rgba(3, 97, 119, 0.85) 57.8%,
-    rgba(16, 67, 102, 0.85) 100%
+    #E2AB73 0%,
+    #E2AC73 26.43%,
+    #E2AD73 57.8%,
+    #E2AE73 100%
   ) !important;
 }
 
