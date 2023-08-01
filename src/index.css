@@ -16,8 +16,8 @@
 
 .bg-blue {
   --bg-opacity: 1;
-  background-color: #2C728A;
-  background-color: rgba(44,114,138,var(--bg-opacity));
+  background-color: rgb(251 , 191 , 36);
+  background-color: rgba(251 , 191 , 36,var(--bg-opacity));
 }
 
 @media (min-width: 1100px){
@@ -180,7 +180,7 @@ body {
 
 .bg-overlay {
   background-size: cover;
-  box-shadow: inset 0 0 0 2000px rgba(20, 96, 97, 0.65);
+  box-shadow: inset 0 0 0 2000px rgba(251 ,191 ,36, 0.65);
   transition: 0.7s all;
 }
 
@@ -373,20 +373,18 @@ footer .divider {
 }
 
 .bg-gradiant {
-  background: linear-gradient(
-    45deg,
-    #E2AB73 0%,
-    #E2AC73 26.43%,
-    #E2AD73 57.8%,
-    #E2AE73 100%
-  ) !important;
+  background: linear-gradient(45deg,#e2ab73,rgb(252 , 211 , 77) 26.43%, rgb(251 , 191 , 36) 57.8%,rgb(245 , 158 , 11)) !important;
+}
+
+.border-green-700 {
+border-color: rgb(245, 158 ,11) !important;
 }
 
 .absolute-header {
   background-image: linear-gradient(
     260deg,
-    rgba(24, 146, 191, 0.9) -52%,
-    rgba(29, 149, 141, 0.9) 54%
+    rgb(252, 211 ,77) -52%,
+    rgb(245, 158 ,11, 0.9) 54%
   );
   color: white;
 }
