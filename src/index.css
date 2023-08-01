@@ -376,7 +376,7 @@ footer .divider {
   background: linear-gradient(45deg,#e2ab73,rgb(252 , 211 , 77) 26.43%, rgb(251 , 191 , 36) 57.8%,rgb(245 , 158 , 11)) !important;
 }
 
-.border-green-700 {
+.hover\:border-green-700:hover {
 border-color: rgb(245, 158 ,11) !important;
 }
 
