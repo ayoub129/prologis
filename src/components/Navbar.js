@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import { Link } from "react-router-dom";
 import { SlMenu } from "react-icons/sl";
 import { TiTimes } from "react-icons/ti";
@@ -6,6 +6,9 @@ import { TiTimes } from "react-icons/ti";
 const Navbar = () => {
   const [navigation, setNavigation] = useState(false);
 
+  useEffect(() => {
+    setNavigation(false)
+  } , [])
   return (
     <div>
       <div className="navbar bg-base-100 mx-5 md:container md:mx-auto md:py-5">
