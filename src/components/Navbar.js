@@ -1,14 +1,15 @@
 import { useState , useEffect} from "react";
-import { Link } from "react-router-dom";
+import { Link , useLocation } from "react-router-dom";
 import { SlMenu } from "react-icons/sl";
 import { TiTimes } from "react-icons/ti";
 
 const Navbar = () => {
+  const location = useLocation();
   const [navigation, setNavigation] = useState(false);
 
   useEffect(() => {
     setNavigation(false)
-  } , [])
+  } , [location])
   return (
     <div>
       <div className="navbar bg-base-100 mx-5 md:container md:mx-auto md:py-5">
